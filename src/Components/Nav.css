@@ -1,9 +1,18 @@
 .navv{
     background-color: #CAEBFF;
 }
+*{
+scroll-behavior: smooth;
+}
+.animnav2{
+  animation: scale1 0.5s cubic-bezier(0, 0.71, 0.2, 1.01) forwards;
+}
+
+
 
 li:hover{
     background-color: #62B9CB;
+    transform: scale(1.1);
     
 }
 
@@ -12,9 +21,9 @@ li{
 }
 
 
-.hideit {
+.hideit  {
     opacity: 0;
-    animation: fadeOut 0.5s forwards;
+    animation: fadeOut 0.4s forwards;
     /* Utilisez 'forwards' pour maintenir le style final après l'animation */
   }
   
@@ -43,3 +52,15 @@ li{
     }
   }
   
+  @keyframes scale1{
+    from {
+      transform: scale(0.7);
+    }
+  
+    to {
+     transform: scale(1.1);
+    }
+  }
+ 
+
+ 

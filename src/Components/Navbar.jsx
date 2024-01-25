@@ -86,14 +86,20 @@ function Navbar() {
   }
 
   const returnTextNav = () => {
+    const scaleVariants = {
+      hidden: { scale: 0.8, opacity: 0, transition: { duration: 0.15 } },
+      visible: { scale: 1, opacity: 1, transition: { duration: 0.15 } },
+    };
+  
     return (
       <AnimatePresence exitBeforeEnter={false} mode='wait'>
         {homeHover && (
           <motion.div
             key="home"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.1 } }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={scaleVariants}
             className='text-center font-bold textnavv mt-2 text-lg'
           >
             Accueil
@@ -102,9 +108,10 @@ function Navbar() {
         {computerHover && (
           <motion.div
             key="computer"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.1 } }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={scaleVariants}
             className='text-center font-bold textnavv mt-2 text-lg'
           >
             Réalisations
@@ -113,9 +120,10 @@ function Navbar() {
         {profilHover && (
           <motion.div
             key="profil"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.1 } }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={scaleVariants}
             className='text-center font-bold textnavv mt-2 text-lg'
           >
             Parcours
@@ -124,9 +132,10 @@ function Navbar() {
         {mailHover && (
           <motion.div
             key="mail"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.1 } }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={scaleVariants}
             className='text-center font-bold textnavv mt-2 text-lg'
           >
             Contact
@@ -135,23 +144,24 @@ function Navbar() {
       </AnimatePresence>
     );
   }
+  
 
   return (
     <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 ${show ? "makeitvisible" : "hideit"}`}>
-      <nav className='navv rounded-lg'>
-        <ul className='flex justify-center py-2 px-4 gap-4 items-center'>
-          <li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2}>
+      <nav className={`navv rounded-lg ${show ? "animnav2" : ""}`} >
+        <ul className='flex justify-center py-2 px-4 gap-4 items-center' >
+          <a href="#home"> <li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2}>
             <img src={home} alt="" onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2} />
-          </li>
-          <li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleComputerHover} onMouseOut={togleComputerHover2}>
+          </li></a>
+          <a href="#real"><li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleComputerHover} onMouseOut={togleComputerHover2}>
             <img src={computer} alt="" onMouseEnter={togleComputerHover} onMouseOut={togleComputerHover2} />
-          </li>
-          <li className='border-[3px] border-white p-1 rounded-md cursor-pointer'onMouseEnter={togleProfilHover} onMouseOut={togleProfilHover2} >
+          </li></a> 
+          <a href="#profil"><li className='border-[3px] border-white p-1 rounded-md cursor-pointer'onMouseEnter={togleProfilHover} onMouseOut={togleProfilHover2} >
             <img src={profilim} alt="" onMouseEnter={togleProfilHover} onMouseOut={togleProfilHover2} />
-          </li>
-          <li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleMailHover} onMouseOut={togleMailHover2}>
+          </li></a>
+          <a href="#contact"><li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleMailHover} onMouseOut={togleMailHover2}>
             <img src={mail} alt="" onMouseEnter={togleMailHover} onMouseOut={togleMailHover2} />
-          </li>
+          </li></a>
         </ul>
       </nav>
       {returnTextNav()}
