@@ -1,0 +1,45 @@
+.navv{
+    background-color: #CAEBFF;
+}
+
+li:hover{
+    background-color: #62B9CB;
+    
+}
+
+li{
+    transition: 0.15s ease-in-out;
+}
+
+
+.hideit {
+    opacity: 0;
+    animation: fadeOut 0.5s forwards;
+    /* Utilisez 'forwards' pour maintenir le style final après l'animation */
+  }
+  
+  .makeitvisible {
+    opacity: 1;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
