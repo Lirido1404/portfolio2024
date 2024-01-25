@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media screen and (width <= 450px) {
+   .diviolet{
+    display: block;
+   }
+}
+
+
+@media screen and (width > 450px) {
+    .navcompl{
+        display: block;
+    }
+ }

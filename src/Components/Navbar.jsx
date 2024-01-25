@@ -147,7 +147,7 @@ function Navbar() {
   
 
   return (
-    <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 ${show ? "makeitvisible" : "hideit"}`}>
+    <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 ${show ? "makeitvisible" : "hideit"} hidden navcompl`}>
       <nav className={`navv rounded-lg ${show ? "animnav2" : ""}`} >
         <ul className='flex justify-center py-2 px-4 gap-4 items-center' >
           <a href="#home"> <li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2}>
