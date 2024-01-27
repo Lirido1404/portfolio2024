@@ -242,7 +242,7 @@
     border-radius: 50%;
     z-index: -1;
     filter: blur(30px);
-    opacity: 30%;
+    opacity: 20%;
     animation: flottement 8s ease-in-out infinite, rotate 24s ease-in-out infinite;
   }
   
@@ -269,7 +269,7 @@
     border-radius: 50%;
     z-index: -1;
     filter: blur(30px);
-    opacity: 30%;
+    opacity: 20%;
     animation: flottement2 12s ease-in-out infinite;
   }
 
@@ -325,7 +325,128 @@
     border-radius: 50%;
     z-index: -1;
     filter: blur(30px);
-    opacity: 30%;
+    opacity: 20%;
     animation: flottement2 12s ease-in-out infinite;
     transform: rotate(90deg);
+  }
+
+
+  .luciole4{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .luciole4:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    width: calc(70% + 30px); /* Pour prendre en compte le débordement */
+    height: calc(180% + 30px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 20%;
+    animation: flottement2 12s ease-in-out infinite;
+    
+  }
+
+
+
+  .luciole5{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .luciole5:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: calc(70% + 30px); /* Pour prendre en compte le débordement */
+    height: calc(80% + 30px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 20%;
+    animation: flottement2 9s ease-in-out infinite;
+    
+  }
+
+
+
+  .luciole6{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .luciole6:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: calc(160% + 30px); /* Pour prendre en compte le débordement */
+    height: calc(160% + 30px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 20%;
+    animation: flottement2 9s ease-in-out infinite;
+    
+  }
+
+
+
+  .luciole7{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .luciole7:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: calc(100% + 5px); /* Pour prendre en compte le débordement */
+    height: calc(100% + 5px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 20%;
+    
+    
+  }
+
+
+
+
+  .luciole8{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .luciole8:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -200px;
+    width: calc(120% + 5px); /* Pour prendre en compte le débordement */
+    height: calc(100% + 5px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 10%;
+    animation: flottement2 9s ease-in-out infinite;
+    
+    
   }

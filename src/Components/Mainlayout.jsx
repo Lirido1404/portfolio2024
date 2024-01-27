@@ -159,7 +159,7 @@ function Mainlayout() {
             Au delà du swipe
             </h3>
           </div>
-          <div className='relative justify-center flex mt-8'>
+          <div className='relative justify-center flex mt-8 luciole4'>
           <img src={imgwebdocu} alt="" className='rounded-lg border-2 border-[#B8FFC7] ' draggable={false}/>
           
           </div>
@@ -190,7 +190,7 @@ function Mainlayout() {
             Digi4All
             </h3>
           </div>
-          <div className='relative justify-center flex mt-8'>
+          <div className='relative justify-center flex mt-8 '>
           <img src={digiforall} alt="" className='rounded-lg border-2 border-[#B8FFC7] ' draggable={false}/>
           
           </div>
@@ -233,7 +233,7 @@ function Mainlayout() {
             Mes mondes imaginaires
             </h3>
           </div>
-          <div className='relative justify-center flex mt-4'>
+          <div className='relative justify-center flex mt-4 luciole5'>
           <img src={Ajax} alt="" className='rounded-lg border-2 border-[#B8FFC7] ' draggable={false}/>
           
           </div>
@@ -284,14 +284,14 @@ function Mainlayout() {
 
           </div>
 
-          <h2 className='text-center text-2xl mt-4 text-white font-bold'>
+          <h2 className='text-center text-2xl mt-4 text-white font-bold '>
             Mes études
           </h2>
 
 <div className='flex flex-col mt-10 gap-6'>
 
 
-          <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1 '>
+          <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1 luciole6'>
             
             <h3 className='text-center mt-2'>Lycée</h3>
             <p className='text-center text-sm'><span>B</span>ac <span>T</span>echnologique STI2D - <span>T</span>rès <span>B</span>ien</p>
@@ -327,12 +327,12 @@ function Mainlayout() {
           </div>
           
 
-          <div className='flex flex-col gap-8 mt-4'>
+          <div className='flex flex-col gap-8 mt-4 '>
             <h2 className='text-center text-2xl text-white font-bold'>
               A propos de moi
             </h2>
-            <div className='flex justify-center'>
-            <img src={photomax2} alt="" className='w-[80%] h-[80%] rounded-full border-2 border-[#B8FFC7]' />
+            <div className='flex justify-center '>
+            <img src={photomax2} alt="" className='w-[80%] h-[80%] rounded-full border-2 border-[#B8FFC7] ' />
             </div>
             <div className='flex justify-center'>
             <p className='text-xl text-justify text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quae nostrum, 
@@ -359,17 +359,23 @@ function Mainlayout() {
 
           <div className='flex gap-4 justify-center mt-6'>
 
+            <div className='luciole7'>
               <div className='bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20'>
               <img src={piano} alt=""  className='w-8 h-8'/>
               </div>
+            </div>
 
+            <div className='luciole7'>
               <div className='bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20'>
               <img src={photo} alt=""  className='w-8 h-8'/>
               </div>
+            </div>
 
+            <div className='luciole7'>
               <div className='bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20'>
               <img src={book} alt=""  className='w-8 h-8'/>
               </div>
+            </div>
 
           </div>
 
@@ -392,7 +398,7 @@ function Mainlayout() {
             </div>
           </div>
 
-          <footer className='h-20 w-[100%] bg-[#B8FFC7] mt-10 rounded-lg flex flex-col py-2 px-4 mb-8 justify-center gap-2'>
+          <footer className='h-20 w-[100%] bg-[#B8FFC7] mt-10 rounded-lg flex flex-col py-2 px-4 mb-8 justify-center gap-2 luciole8'>
           
           <div className='flex gap-2 items-center'>
             <img src={mailicon} alt="" className='w-6 h-6' />
