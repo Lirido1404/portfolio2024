@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 
-@media screen and (width <= 450px) {
-   .diviolet{
-    display: block;
-   }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #08262E;
+    overflow-x: hidden;
 }
 
 
@@ -14,4 +19,33 @@
     .navcompl{
         display: block;
     }
+ }
+
+ @media screen and (width <= 450px) {
+    .navmob1{
+        display: block;
+    }
+ }
+ 
+ @font-face {
+    font-family: Lora;
+    src: url("../src/Fonts/Lora/Lora-VariableFont_wght.ttf");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Inter;
+    src: url("../src/Fonts/Lora/Inter/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+
+
+ 
+
+ h1,h2,h3,.pdragme{
+    font-family: Lora;
  }

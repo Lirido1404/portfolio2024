@@ -94,52 +94,52 @@ function Navbar() {
     return (
       <AnimatePresence exitBeforeEnter={false} mode='wait'>
         {homeHover && (
-          <motion.div
+          <motion.p
             key="home"
             initial="hidden"
             animate="visible"
             exit="hidden"
             variants={scaleVariants}
-            className='text-center font-bold textnavv mt-2 text-lg'
+            className='text-center font-bold textnavv mt-2 text-lg text-white'
           >
             Accueil
-          </motion.div>
+          </motion.p>
         )}
         {computerHover && (
-          <motion.div
+          <motion.p
             key="computer"
             initial="hidden"
             animate="visible"
             exit="hidden"
             variants={scaleVariants}
-            className='text-center font-bold textnavv mt-2 text-lg'
+            className='text-center font-bold textnavv mt-2 text-lg text-white'
           >
             Réalisations
-          </motion.div>
+          </motion.p>
         )}
         {profilHover && (
-          <motion.div
+          <motion.p
             key="profil"
             initial="hidden"
             animate="visible"
             exit="hidden"
             variants={scaleVariants}
-            className='text-center font-bold textnavv mt-2 text-lg'
+            className='text-center font-bold textnavv mt-2 text-lg text-white'
           >
             Parcours
-          </motion.div>
+          </motion.p>
         )}
         {mailHover && (
-          <motion.div
+          <motion.p
             key="mail"
             initial="hidden"
             animate="visible"
             exit="hidden"
             variants={scaleVariants}
-            className='text-center font-bold textnavv mt-2 text-lg'
+            className='text-center font-bold textnavv mt-2 text-lg text-white'
           >
             Contact
-          </motion.div>
+          </motion.p>
         )}
       </AnimatePresence>
     );
@@ -147,19 +147,19 @@ function Navbar() {
   
 
   return (
-    <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 ${show ? "makeitvisible" : "hideit"} hidden navcompl`}>
+    <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 ${show ? "makeitvisible" : "hideit"} hidden navcompl `}>
       <nav className={`navv rounded-lg ${show ? "animnav2" : ""}`} >
         <ul className='flex justify-center py-2 px-4 gap-4 items-center' >
-          <a href="#home"> <li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2}>
+          <a href="#home"> <li className='border-[3px] border-[#B8FFC7] p-1 rounded-md cursor-pointer' onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2}>
             <img src={home} alt="" onMouseEnter={togleHomeHover} onMouseOut={togleHomeHover2} />
           </li></a>
-          <a href="#real"><li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleComputerHover} onMouseOut={togleComputerHover2}>
+          <a href="#real"><li className='border-[3px] border-[#B8FFC7] p-1 rounded-md cursor-pointer' onMouseEnter={togleComputerHover} onMouseOut={togleComputerHover2}>
             <img src={computer} alt="" onMouseEnter={togleComputerHover} onMouseOut={togleComputerHover2} />
           </li></a> 
-          <a href="#profil"><li className='border-[3px] border-white p-1 rounded-md cursor-pointer'onMouseEnter={togleProfilHover} onMouseOut={togleProfilHover2} >
+          <a href="#profil"><li className='border-[3px] border-[#B8FFC7] p-1 rounded-md cursor-pointer'onMouseEnter={togleProfilHover} onMouseOut={togleProfilHover2} >
             <img src={profilim} alt="" onMouseEnter={togleProfilHover} onMouseOut={togleProfilHover2} />
           </li></a>
-          <a href="#contact"><li className='border-[3px] border-white p-1 rounded-md cursor-pointer' onMouseEnter={togleMailHover} onMouseOut={togleMailHover2}>
+          <a href="#contact"><li className='border-[3px] border-[#B8FFC7] p-1 rounded-md cursor-pointer' onMouseEnter={togleMailHover} onMouseOut={togleMailHover2}>
             <img src={mail} alt="" onMouseEnter={togleMailHover} onMouseOut={togleMailHover2} />
           </li></a>
         </ul>
