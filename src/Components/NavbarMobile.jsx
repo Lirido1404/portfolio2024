@@ -27,7 +27,7 @@ function NavbarMobile() {
                 <h2 className='text-center text-3xl text-white font-bold'>Contact</h2>
             </div>
         </div>
-    <nav className='h-12 w-12 flex justify-center items-center bg-white rounded-lg fixed top-0 right-0 m-4' onClick={handleToggleMenu}>
+    <nav className='h-12 w-12 flex justify-center items-center bg-white rounded-lg fixed top-0 right-0 m-2' onClick={handleToggleMenu}>
         <ul>
             <li className='bg-white border-2 p-1 rounded-lg border-[#B8FFC7]' >
                 {toggleMenu ? <div className='iconmenumob'><RxCross2 size={25} /></div>  : <div className='iconmenumob'><RxHamburgerMenu size={25} /></div>} 

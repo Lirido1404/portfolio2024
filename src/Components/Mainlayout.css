@@ -89,3 +89,243 @@
   .sectionlogo img:nth-child(9){
     grid: c9;
   }
+
+  .btncta{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px -1px 4px 0px rgba(255, 255, 255, 0.3);
+  }
+
+
+  .reqAjax{
+    animation: opacity 1s ease-in-out forwards, scale1 1s ease-in-out forwards;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+
+  .reqMario{
+    animation: opacity 1s ease-in-out forwards 0.5s, scale1 1s ease-in-out forwards 0.5s;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+
+  }
+
+
+  @keyframes opacity{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+
+  @keyframes scale1{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+
+
+  .parentdivetudes1:hover span{
+    color: #8BB894;
+    transition: 0.3s ease;
+  }
+
+
+  .parentdivetudes1:hover{
+    box-shadow: 0px 0px 10px 2px #B8FFC7;
+    border: 3px solid #B8FFC7;
+    
+  }
+
+
+  .parentdivetudes1{
+    transition: 0.25s ease;
+  }
+
+
+  .parentdivetudes1 img {
+    filter: grayscale(100%);
+    transition: 0.25s ease;
+  }
+
+  .parentdivetudes1:hover img {
+    filter: grayscale(0%);
+  }
+
+  .parentdivetudes1:hover .separateurd1{
+    background-color: #B8FFC7;
+  }
+
+
+  .separateurd1{
+    transition: 0.25s ease;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .parentdivetudes2:hover span{
+    color: #8BB894;
+    transition: 0.3s ease;
+  }
+
+
+  .parentdivetudes2:hover{
+    box-shadow: 0px 0px 10px 2px #B8FFC7;
+    border: 3px solid #B8FFC7;
+    
+  }
+
+
+  .parentdivetudes2{
+    transition: 0.25s ease;
+  }
+
+
+  .parentdivetudes2 img {
+    filter: grayscale(100%);
+    transition: 0.25s ease;
+  }
+
+  .parentdivetudes2:hover img {
+    filter: grayscale(0%);
+  }
+
+  .parentdivetudes2:hover .separateurd2{
+    background-color: #B8FFC7;
+  }
+
+
+  .separateurd2{
+    transition: 0.25s ease;
+  }
+
+
+  .photomp-container {
+    position: relative;
+    display: inline-block; /* pour que le conteneur s'adapte à la taille de l'image */
+  }
+  
+  .photomp-container:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: calc(100% + 30px); /* Pour prendre en compte le débordement */
+    height: calc(100% + 30px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 30%;
+    animation: flottement 8s ease-in-out infinite, rotate 24s ease-in-out infinite;
+  }
+  
+  .photomp {
+    display: block; /* Pour s'assurer que l'image a ses propres dimensions */
+    border: 2px solid #B8FFC7;
+    border-radius: 50%; /* Pour garder la forme arrondie de l'image */
+  }
+
+
+  .luciole2{
+    position: relative;
+    display: inline-block;
+  }
+
+  .luciole2:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -50px;
+    width: calc(130% + 30px); /* Pour prendre en compte le débordement */
+    height: calc(300% + 30px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 30%;
+    animation: flottement2 12s ease-in-out infinite;
+  }
+
+  @keyframes flottement2 {
+
+    0%,
+    100% {
+      transform: translate(0, 0);
+      /* Position initiale */
+    }
+  
+    25% {
+      transform: translate(10px, 10px);
+      /* Déplacement en haut à droite */
+    }
+  
+    50% {
+      transform: translate(-20px, 30px);
+      /* Déplacement vers le haut à gauche */
+    }
+  
+    75% {
+      transform: translate(20px, -10px);
+      /* Déplacement vers le bas à droite */
+    }
+  }
+  
+  @keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+
+
+
+  .luciole3{
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .luciole3:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    width: calc(130% + 30px); /* Pour prendre en compte le débordement */
+    height: calc(100% + 30px); /* Pour prendre en compte le débordement */
+    background: conic-gradient(#B8FFC7, #B8FFC720);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 30%;
+    animation: flottement2 12s ease-in-out infinite;
+    transform: rotate(90deg);
+  }

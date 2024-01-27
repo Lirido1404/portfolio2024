@@ -46,6 +46,10 @@ body{
 
  
 
- h1,h2,h3,.pdragme{
+ h1,h2,h3,.pdragme,.plora{
     font-family: Lora;
+ }
+
+ p{
+    font-family: Inter;
  }
