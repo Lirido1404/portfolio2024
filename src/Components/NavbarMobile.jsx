@@ -13,20 +13,21 @@ function NavbarMobile() {
    
   return (
     <div className='hidden navmob1'>
-        <div className={`h-[100vh] bg-[#08262E] fixed top-0 w-[100%] ${toggleMenu ? " " : "atransform"} menunavmob`}>
-            <div className='w-[70%] mx-auto  p-4 mt-40 divbord'>
-                <h2 className='text-center text-3xl text-white font-bold'>Accueil</h2>
-            </div>
-            <div className='w-[70%] mx-auto  p-4 mt-28 divbord'>
-                <h2 className='text-center text-3xl text-white font-bold'>Réalisations</h2>
-            </div>
-            <div className='w-[70%] mx-auto  p-4 mt-28 divbord'>
-                <h2 className='text-center text-3xl text-white font-bold'>Profil</h2>
-            </div>
-            <div className='w-[70%] mx-auto  p-4 mt-28 divbord'>
-                <h2 className='text-center text-3xl text-white font-bold'>Contact</h2>
-            </div>
-        </div>
+        <div className={`h-[100vh] bg-[#08262E] fixed top-0 w-[100%] ${toggleMenu ? "" : "atransform"} menunavmob flex flex-col justify-center items-center gap-14`}>
+    <div className='w-[70%] mx-auto p-4 divbord'>
+        <h2 className='text-center text-3xl text-white font-bold'>Accueil</h2>
+    </div>
+    <div className='w-[70%] mx-auto p-4 divbord'>
+        <h2 className='text-center text-3xl text-white font-bold'>Réalisations</h2>
+    </div>
+    <div className='w-[70%] mx-auto p-4 divbord'>
+        <h2 className='text-center text-3xl text-white font-bold'>Profil</h2>
+    </div>
+    <div className='w-[70%] mx-auto p-4 divbord'>
+        <h2 className='text-center text-3xl text-white font-bold'>Contact</h2>
+    </div>
+</div>
+
     <nav className='h-12 w-12 flex justify-center items-center bg-white rounded-lg fixed top-0 right-0 m-2' onClick={handleToggleMenu}>
         <ul>
             <li className='bg-white border-2 p-1 rounded-lg border-[#B8FFC7]' >

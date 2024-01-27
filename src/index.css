@@ -14,17 +14,25 @@ body{
     overflow-x: hidden;
 }
 
+.App{
+    overflow-x: hidden;
+}
+
 
 @media screen and (width > 450px) {
     .navcompl{
         display: block;
     }
+
+    
  }
 
  @media screen and (width <= 450px) {
     .navmob1{
         display: block;
     }
+
+  
  }
  
  @font-face {

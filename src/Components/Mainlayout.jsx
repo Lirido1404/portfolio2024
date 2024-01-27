@@ -253,7 +253,7 @@ function Mainlayout() {
 
 
 
-          <div className='reqMario'>
+          <div className='reqMario' id='real5'>
           <div className='mt-20' >
               <h3 className='text-lg text-white text-center'>
                 Jeux type mario
@@ -271,7 +271,7 @@ function Mainlayout() {
                 fugiat assumenda eligendi sit consequatur maiores, id non voluptas odio sunt, temporibus
               </p>
             </div>
-            <div className='flex justify-center mt-4' id='real5'>
+            <div className='flex justify-center mt-4' >
               <a href='https://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1 rounded border-1 border-[#EDEDED] btncta'>
                 <p className='text-xl font-bold opacity-90 '>Essayer !</p>
               </a>
