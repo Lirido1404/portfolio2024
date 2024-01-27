@@ -5,7 +5,7 @@ import NavbarMobile from "./Components/NavbarMobile";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='home'>
      <Mainlayout/> 
      <Navbar/>
      <NavbarMobile/>

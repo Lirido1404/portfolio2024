@@ -10,21 +10,25 @@ function NavbarMobile() {
     const handleToggleMenu = ()=>{
         setToggleMenu(!toggleMenu);
     }
+
+    const fermerMenu =()=>{
+        setToggleMenu(false);
+    }
    
   return (
     <div className='hidden navmob1'>
         <div className={`h-[100vh] bg-[#08262E] fixed top-0 w-[100%] ${toggleMenu ? "" : "atransform"} menunavmob flex flex-col justify-center items-center gap-14`}>
-    <div className='w-[70%] mx-auto p-4 divbord'>
-        <h2 className='text-center text-3xl text-white font-bold'>Accueil</h2>
+    <div className='w-[70%] mx-auto p-4 divbord flex justify-center'>
+        <a href='#home' className='text-center text-3xl text-white font-bold' onClick={fermerMenu}>Accueil</a>
     </div>
-    <div className='w-[70%] mx-auto p-4 divbord'>
-        <h2 className='text-center text-3xl text-white font-bold'>Réalisations</h2>
+    <div className='w-[70%] mx-auto p-4 divbord flex justify-center'>
+        <a href='#real' className='text-center text-3xl text-white font-bold' onClick={fermerMenu}>Réalisations</a>
     </div>
-    <div className='w-[70%] mx-auto p-4 divbord'>
-        <h2 className='text-center text-3xl text-white font-bold'>Profil</h2>
+    <div className='w-[70%] mx-auto p-4 divbord flex justify-center'>
+        <a href='#profil' className='text-center text-3xl text-white font-bold' onClick={fermerMenu}>Profil</a>
     </div>
-    <div className='w-[70%] mx-auto p-4 divbord'>
-        <h2 className='text-center text-3xl text-white font-bold'>Contact</h2>
+    <div className='w-[70%] mx-auto p-4 divbord flex justify-center'>
+        <a href='#contact' className='text-center text-3xl text-white font-bold' onClick={fermerMenu}>Contact</a>
     </div>
 </div>
 

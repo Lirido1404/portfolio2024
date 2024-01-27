@@ -56,7 +56,7 @@ function Mainlayout() {
 
 
   return (
-    <div className='' id='home'>
+    <div className='' >
       <header>
         <div className='flex justify-center items-center mt-16 relative'>
         <div className='photomp-container'>
@@ -115,7 +115,7 @@ function Mainlayout() {
 
           </div>
 
-          <div className='mt-10 '>
+          <div className='mt-10 ' id='real'>
             <h3 className='text-lg text-white text-center font-bold' >
             Quelques-uns de mes projets
             </h3>
@@ -284,7 +284,7 @@ function Mainlayout() {
 
           </div>
 
-          <h2 className='text-center text-2xl mt-4 text-white font-bold '>
+          <h2 className='text-center text-2xl mt-4 text-white font-bold ' id='profil'>
             Mes études
           </h2>
 
@@ -398,7 +398,7 @@ function Mainlayout() {
             </div>
           </div>
 
-          <footer className='h-20 w-[100%] bg-[#B8FFC7] mt-10 rounded-lg flex flex-col py-2 px-4 mb-8 justify-center gap-2 luciole8'>
+          <footer className='h-20 w-[100%] bg-[#B8FFC7] mt-10 rounded-lg flex flex-col py-2 px-4 mb-8 justify-center gap-2 luciole8' id='contact'>
           
           <div className='flex gap-2 items-center'>
             <img src={mailicon} alt="" className='w-6 h-6' />
