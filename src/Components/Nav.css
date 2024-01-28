@@ -1,5 +1,5 @@
 .navv{
-    background-color: #FFFFFF;
+    background-color: #00000080;
 }
 *{
 scroll-behavior: smooth;
@@ -11,13 +11,14 @@ scroll-behavior: smooth;
 
 
 li:hover{
-    background-color: #EAEAEA;
+    background-color: #B8FFC7;
     transform: scale(1.1);
     
 }
 
 li{
     transition: 0.15s ease-in-out;
+    background-color: white;
 }
 
 

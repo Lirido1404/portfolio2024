@@ -92,28 +92,49 @@ function Mainlayout() {
 
 
           <div className='mt-10 luciole2 '>
-            <h3 className='text-lg text-white techstack '>
+            <h3 className='text-lg text-white techstack font-bold'>
             Tech Stack
             </h3>
           </div>
-          <div className='h-1 w-8 bg-[#B8FFC7] mt-4 rounded-full'>
+
+
+          <div className='h-1 w-8 bg-[#B8FFC7] mt-6 rounded-full'>
 
           </div>
-          <div className='sectionlogo mt-4'>
+
+          <h3 className='text-lg text-white mt-2 styleInter italic'>
+            Front-End
+          </h3>
+
+
+          <div className='sectionlogo mt-2'>
             <img src={htmllogo} alt="" className='w-16 h-16' draggable={false}/>
             <img src={csslogo} alt="" className='w-16 h-16' draggable={false}/>
             <img src={javascriptlogo} alt="" className='w-16 h-16 p-1' draggable={false}/>
             <img src={bootstraplogo} alt="" className='w-18 h-16 p-1' draggable={false}/>
             <img src={reactlogo} alt="" className='w-16 h-16' draggable={false}/>
             <img src={tailwindlogo} alt="" className='w-16 h-16' draggable={false}/>
-            <img src={phplogo} alt="" className='w-16 h-16' draggable={false}/>
-            <img src={sqllogo} alt="" className='w-14 h-14' draggable={false}/>
-            <img src={symfonylogo} alt="" className='w-16 h-16' draggable={false}/>          
+                      
           </div>
+          
 
           <div className='h-1 w-8 bg-[#B8FFC7] mt-4 rounded-full'>
 
           </div>
+
+          <h3 className='text-lg text-white mt-2 styleInter italic'>
+            Back-End
+          </h3>
+
+
+          <div className='sectionlogoback mt-2'>
+            <img src={phplogo} alt="" className='w-16 h-16' draggable={false}/>
+            <img src={sqllogo} alt="" className='w-14 h-14' draggable={false}/>
+            <img src={symfonylogo} alt="" className='w-16 h-16' draggable={false}/>
+          </div>
+
+
+
 
           <div className='mt-10 ' id='real'>
             <h3 className='text-lg text-white text-center font-bold' >
@@ -140,7 +161,7 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-            <a href='https://shiny-alpaca-e24526.netlify.app/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+            <a href='http://shiny-alpaca-e24526.netlify.app/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
               <p className='text-xl font-bold opacity-90 '>Essayer !</p>
             </a>
           </div>
@@ -171,7 +192,7 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-          <a href='https://webdoc-dating-app.netlify.app/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+          <a href='http://webdoc-dating-app.netlify.app/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
               <p className='text-xl font-bold opacity-90 '>Essayer !</p>
             </a>
           </div>
@@ -202,7 +223,7 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-          <a href='https://digi4all.maxime.prevot.mmi-velizy.fr/index.html' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+          <a href='http://digi4all.maxime.prevot.mmi-velizy.fr/index.html' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
               <p className='text-xl font-bold opacity-90 '>Essayer !</p>
             </a>
           </div>
@@ -245,7 +266,7 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-          <a href='https://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+          <a href='http://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
               <p className='text-xl font-bold opacity-90 '>Essayer !</p>
             </a>
           </div>
@@ -272,7 +293,7 @@ function Mainlayout() {
               </p>
             </div>
             <div className='flex justify-center mt-4' >
-              <a href='https://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1 rounded border-1 border-[#EDEDED] btncta'>
+              <a href='http://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1 rounded border-1 border-[#EDEDED] btncta'>
                 <p className='text-xl font-bold opacity-90 '>Essayer !</p>
               </a>
             </div>

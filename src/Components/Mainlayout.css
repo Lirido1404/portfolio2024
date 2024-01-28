@@ -44,10 +44,20 @@
   .sectionlogo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "c1 c2 c3"
-    "c4 c5 c6"
+    "c4 c5 c6";
+    gap: 2rem;
+    padding: 0.5rem;
+    place-items: center;
+  }
+
+
+  .sectionlogoback{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
     "c7 c8 c9";
     gap: 2rem;
     padding: 0.5rem;
@@ -78,17 +88,7 @@
     grid: c6;
   }
 
-  .sectionlogo img:nth-child(7){
-    grid: c7;
-  }
 
-  .sectionlogo img:nth-child(8){
-    grid: c8;
-  }
-
-  .sectionlogo img:nth-child(9){
-    grid: c9;
-  }
 
   .btncta{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
