@@ -322,39 +322,99 @@ function Mainlayout() {
             Mes études
           </h2>
 
-<div className='flex flex-col mt-10 gap-6'>
-
-
-          <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1 luciole6'>
-            
-            <h3 className='text-center mt-2'>Lycée</h3>
-            <p className='text-center text-sm'><span>B</span>ac <span>T</span>echnologique STI2D - <span>T</span>rès <span>B</span>ien</p>
-              
-              <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1'>
-                
-              </div>
-              <img src={stnic} alt="" className='w-[40%] h-[40%] mx-auto mt-2' draggable={false}/>
-              <p className='text-center mt-2 plora'>2020 - 2022</p>
-            
-          </div>
+        
 
 
 
 
-          <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes2 '>
-            
-            <h3 className='text-center mt-2'>BUT MMI</h3>
-            <p className='text-center text-sm'>(<span>M</span>étiers du <span>M</span>ultimédia et de l’<span>I</span>nternet)</p>
-              
-              <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd2'>
-                
-              </div>
-              <img src={IUT} alt="" className='w-[70%] h-[70%] mx-auto mt-2' draggable={false}/>
-              <p className='text-center mt-2 plora'>2020 - 2022</p>
-            
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div className='flex justify-center'>
+          <div className='flex flex-col mt-10 gap-12 diviconetudes'>
+
+
+<div className='flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1 luciole6 p-4'>
+ 
+  <h3 className='text-center mt-6'>Lycée</h3>
+  <p className='text-center text-sm'><span>B</span>ac <span>T</span>echnologique STI2D - <span>T</span>rès <span>B</span>ien</p>
+    
+    <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1'>
+      
+    </div>
+    <div className='m-8 h-20 w-40 flex justify-center items-center mx-auto'>
+    <img src={stnic} alt="" draggable={false}/>
+    </div>
+    <p className='text-center mt-10 plora text-sm'>2020 - 2022</p>
+  
+</div>
+
+
+
+
+<div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes2  p-4'>
+  
+  <h3 className='text-center mt-6'>BUT MMI</h3>
+  <p className='text-center text-sm'>(<span>M</span>étiers du <span>M</span>ultimédia et de l’<span>I</span>nternet)</p>
+    
+    <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd2'>
+      
+    </div>
+    <div className='m-8 h-20 w-40 flex justify-center items-center mx-auto'>
+    <img src={IUT} alt="" draggable={false}/>
+    </div>
+    <p className='text-center mt-2 plora text-sm'>2022 - Aujourd'hui</p>
+  
+</div>
 
 </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <div className='h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full'>
 
@@ -421,18 +481,83 @@ function Mainlayout() {
               Mes objectifs
           </h2>
 
-          <div className='flex flex-wrap justify-center gap-6 mt-4'>
-            <div className='flex flex-col'>
-            <img src={nextjslogo} alt="" className='h-16 w-16 scale-150'/>
-            <p className='text-center text-white'>Nextjs</p>
+
+
+
+
+
+
+
+
+
+
+          <div className='flex flex-col mt-10 gap-6 divicondev'>
+
+
+          <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1'>
+            
+            <div className="flex justify-center">
+              <img src={nextjslogo} alt="" className="h-32 w-32" />
             </div>
-            <div className='flex flex-col'>
-            <img src={nodejsicon} alt="" className='h-16 w-16'/>
-            <p className='text-center text-white'>Nodejs</p>
-            </div>
+            <p className="text-center font-bold">
+              Nextjs
+            </p>
+              
+              <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1'>
+                
+              </div>
+
+              <div className="flex justify-center">
+                <p className="text-sm text-justify p-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  Maxime sed adipisci doloremque, nostrum quia repellat saepe iusto eaque laboriosam voluptas!
+                </p>
+              </div>
+             
+            
           </div>
 
-          <footer className='h-20 w-[100%] bg-[#B8FFC7] mt-10 rounded-lg flex flex-col py-2 px-4 mb-8 justify-center gap-2 luciole8' id='contact'>
+
+
+
+          <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1'>
+            
+            <div className="flex justify-center">
+              <img src={nodejsicon} alt="" className="h-24 w-24" />
+            </div>
+
+            
+            <p className="text-center font-bold mt-4">
+              Nodejs
+            </p>
+            
+              
+              <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1'>
+                
+              </div>
+
+
+                <div className="flex justify-center">
+                  <p className="text-sm text-justify p-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Maxime sed adipisci doloremque, nostrum quia repellat saepe iusto eaque laboriosam voluptas!
+                  </p>
+                </div>
+             
+            
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+          <footer className='h-20 w-[100%] bg-[#B8FFC7] mt-10 rounded-lg flex flex-col py-4 px-4 mb-8 justify-center gap-2 luciole8' id='contact'>
           
           <div className='flex gap-2 items-center'>
             <img src={mailicon} alt="" className='w-6 h-6' />
