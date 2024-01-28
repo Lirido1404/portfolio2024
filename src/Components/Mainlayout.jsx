@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import "../Components/Mainlayout.css";
 import photomp from "../Images/photomp.png";
 import {motion} from "framer-motion";
+import {Link} from "react-router-dom"
+
+
 import linkedIn from "../Images/linkedin.svg";
 import githublogo from "../Images/github2.svg";
 import htmllogo from "../Images/htmllogo.svg";
@@ -161,9 +164,11 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-            <a href='http://shiny-alpaca-e24526.netlify.app/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
-              <p className='text-xl font-bold opacity-90 '>Essayer !</p>
-            </a>
+           <Link to="/CovidTracker">
+            <button className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+              <p className='text-xl font-bold opacity-90 '>En savoir +</p>
+            </button>
+          </Link>
           </div>
 
 
@@ -192,9 +197,11 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-          <a href='http://webdoc-dating-app.netlify.app/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
-              <p className='text-xl font-bold opacity-90 '>Essayer !</p>
-            </a>
+          <Link to="/Webdocumentaire"> 
+            <button className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+              <p className='text-xl font-bold opacity-90 '>En savoir +</p>
+            </button>
+          </Link>
           </div>
 
 
@@ -223,9 +230,11 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-          <a href='http://digi4all.maxime.prevot.mmi-velizy.fr/index.html' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
-              <p className='text-xl font-bold opacity-90 '>Essayer !</p>
-            </a>
+          <Link to="/Digi4All"> 
+            <button className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+              <p className='text-xl font-bold opacity-90 '>En savoir +</p>
+            </button>
+          </Link>
           </div>
 
 
@@ -266,9 +275,11 @@ function Mainlayout() {
             </p>
           </div>
           <div className='flex justify-center mt-4'>
-          <a href='http://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
-              <p className='text-xl font-bold opacity-90 '>Essayer !</p>
-            </a>
+          <Link to="/RequeteAjax"> 
+            <button className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+              <p className='text-xl font-bold opacity-90 '>En savoir +</p>
+            </button>
+          </Link>
           </div>
           </div>
 
@@ -293,9 +304,11 @@ function Mainlayout() {
               </p>
             </div>
             <div className='flex justify-center mt-4' >
-              <a href='http://maxime.prevot.mmi-velizy.fr/Ajaxjs1/' type='btn' className='bg-[#B8FFC7] px-8 py-1 rounded border-1 border-[#EDEDED] btncta'>
-                <p className='text-xl font-bold opacity-90 '>Essayer !</p>
-              </a>
+            <Link to="/JeuxMario"> 
+            <button className='bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta'>
+              <p className='text-xl font-bold opacity-90 '>En savoir +</p>
+            </button>
+          </Link>
             </div>
             </div>
           </>

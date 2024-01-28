@@ -1,12 +1,12 @@
 import React from 'react'
 import { TbArrowBackUp } from "react-icons/tb";
 import {Link} from "react-router-dom"
-function CovidTracker() {
+function JeuxTypeMario() {
   return (
     <div className=''>
         <div className='flex justify-between items-center bg-white border-b-4 border-[#B8FFC7] p-4'>
           <h1 className='text-2xl font-bold'>
-            CovidTracker
+            Jeux Type Mario
           </h1>
 
           <Link to="/">
@@ -20,4 +20,4 @@ function CovidTracker() {
   )
 }
 
-export default CovidTracker
+export default JeuxTypeMario

@@ -17,7 +17,7 @@ function NavbarMobile() {
    
   return (
     <div className='hidden navmob1'>
-        <div className={`h-[100vh] bg-[#08262E] fixed top-0 w-[100%] ${toggleMenu ? "" : "atransform"} menunavmob flex flex-col justify-center items-center gap-14`}>
+        <div className={`h-[100vh] bg-[#08262E] fixed top-0 w-[100%] ${toggleMenu ? "" : "atransform"} menunavmob flex flex-col justify-center items-center gap-20`}>
     <div className='w-[50%] mx-auto p-4 divbord flex justify-center'>
         <a href='#home' className='text-center text-3xl text-white font-bold' onClick={fermerMenu}>Accueil</a>
     </div>
