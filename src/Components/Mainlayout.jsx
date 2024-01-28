@@ -348,7 +348,7 @@ function Mainlayout() {
 
 <div className='flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1 luciole6 p-4'>
  
-  <h3 className='text-center mt-6'>Lycée</h3>
+  <h3 className='text-center mt-6 font-bold'>Lycée</h3>
   <p className='text-center text-sm'><span>B</span>ac <span>T</span>echnologique STI2D - <span>T</span>rès <span>B</span>ien</p>
     
     <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1'>
@@ -366,7 +366,7 @@ function Mainlayout() {
 
 <div className=' flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes2  p-4'>
   
-  <h3 className='text-center mt-6'>BUT MMI</h3>
+  <h3 className='text-center mt-6 font-bold'>BUT MMI</h3>
   <p className='text-center text-sm'>(<span>M</span>étiers du <span>M</span>ultimédia et de l’<span>I</span>nternet)</p>
     
     <div className='h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd2'>
@@ -561,12 +561,12 @@ function Mainlayout() {
           
           <div className='flex gap-2 items-center'>
             <img src={mailicon} alt="" className='w-6 h-6' />
-            <p className='text-[13px]'>maxime.prevot1804kz@gmail.com</p>
+            <p className='text-[12px]'>maxime.prevot1804kz@gmail.com</p>
           </div>
 
           <div className='flex gap-2 items-center'>
             <img src={telicon} alt="" className='w-6 h-6' />
-            <p className='text-[13px]'>07 81 78 72 72</p>
+            <p className='text-[12px]'>07 81 78 72 72</p>
           </div>
           
           </footer>
