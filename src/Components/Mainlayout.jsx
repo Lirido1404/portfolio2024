@@ -254,7 +254,7 @@ function Mainlayout() {
 
         {showReals && (
           <>
-          <div className='reqAjax'>
+          <div className='reqAjax' id='real5'>
           <div className='mt-20  '>
           <h3 className='text-lg text-white text-center '>
             Requêtes Ajax
@@ -285,7 +285,7 @@ function Mainlayout() {
 
 
 
-          <div className='reqMario' id='real5'>
+          <div className='reqMario' >
           <div className='mt-20' >
               <h3 className='text-lg text-white text-center'>
                 Jeux type mario
