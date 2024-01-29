@@ -226,25 +226,7 @@
   }
 
 
-  .photomp-container {
-    position: relative;
-    display: inline-block; /* pour que le conteneur s'adapte à la taille de l'image */
-  }
-  
-  .photomp-container:before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    width: calc(100% + 30px); /* Pour prendre en compte le débordement */
-    height: calc(100% + 30px); /* Pour prendre en compte le débordement */
-    background: conic-gradient(#B8FFC7, #B8FFC720);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(30px);
-    opacity: 20%;
-    animation: flottement 8s ease-in-out infinite, rotate 24s ease-in-out infinite;
-  }
+ 
   
   .photomp {
     display: block; /* Pour s'assurer que l'image a ses propres dimensions */
@@ -252,6 +234,27 @@
     border-radius: 50%; /* Pour garder la forme arrondie de l'image */
   }
 
+ 
+
+  .photompcont {
+    position: relative; /* Ajoutez ceci pour positionner le pseudo-élément correctement */
+    display: inline-block; /* Pour contenir les dimensions de l'image */
+  }
+  
+  .photompcont::before {
+    content: '';
+    position: absolute; /* Position absolue par rapport à l'élément parent */
+    top: -15px; /* Ajustez la position verticale */
+    left: -15px; /* Ajustez la position horizontale */
+    width: calc(85% + 0px);
+    height: calc(105% + 0px);
+    background: conic-gradient(#B8FFC7, rgba(184, 255, 199, 0.2)); /* Dégradé conique */
+    border-radius: 50%; /* Pour garder la forme arrondie */
+    z-index: -1; 
+    filter: blur(30px);
+    opacity: 20%;
+    /* Assurez-vous que le pseudo-élément est derrière le contenu */
+  }
 
   .luciole2{
     position: relative;
@@ -458,3 +461,10 @@
 
 
 
+.element1:first-child{
+  order: 2;
+}
+
+.element2:last-child{
+  order: 1;
+}

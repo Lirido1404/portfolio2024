@@ -32,10 +32,117 @@ body{
         flex-direction: row;
     }
 
-   
+    .sectionlogo{
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0 !important;
+    }
 
-    
+    .sectiontechlogo{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0 !important;
+        
+    }
+
+    .sectiontechlogocont{
+        margin-top: 2.5rem;
+    }
+
+    .sectionlogoback{
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0 !important;
+    }
+
+    .sectiontechlogo img{
+        max-width: 2.2rem !important;
+        max-height: 2.2rem !important;
+    }
+
+    .sectiontechlogo .infodev{
+        display: none;
+    }
+
+    .barresep1{
+        display: none;
+    }
+
+    .barresep2{
+        display: block;
+    }
+   
+    .h2pres{
+        width: 60ch;
+    }
+
+
+    .brtitre{
+        display: none;
+    }
+
+    .contun{
+        display: flex;
+    }
+    .element1{
+        width: 25%;
+        
+        
+    }
+
+    .element2{
+        width: 75%;
+        
+    }
+
+    header img{
+       max-width: 80%;
+    }
+
+    .logores{
+        margin-top: 2.5rem;
+    }
+
+    .imgres{
+        width: 3.5rem;
+    }
+
+    .textdevfr{
+        font-size: 62px;
+    }
+
+    .projetstext{
+        text-align: left;
+        font-size: 65px;
+        font-weight: bold;
+        margin-top: 5rem;
+    }
+
+    .sepP1Real{
+        display: block;
+    }
+
+
+
+
+
+
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  @media screen and (width <= 450px) {
     .navmob1{
