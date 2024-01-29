@@ -128,7 +128,9 @@ body{
         display: block;
     }
 
-
+    .sectionReal1{
+        margin-top: 8rem;
+    }
 
     .petitesectionReal1{
         display: flex;
@@ -167,6 +169,7 @@ body{
 
     .texteReal1{
         margin-top: 2.5rem;
+        width: 60ch;
     }
 
     .cta1{

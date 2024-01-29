@@ -180,7 +180,7 @@ function Mainlayout() {
 
 
 
-        <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full hidden sepP1Real"></div>
+        <div className="h-1 w-[70%] mx-auto bg-[#B8FFC7] mt-14 rounded-full hidden sepP1Real"></div>
 
 
 
@@ -234,59 +234,96 @@ function Mainlayout() {
 
 
 
-        <div className="mt-20 ">
-          <h3 className="text-lg text-white text-center ">Webdocumentaire</h3>
-          <h3 className="text-center text-white italic">Au delà du swipe</h3>
-        </div>
-        <div className="relative justify-center flex mt-8 luciole4">
-          <img
-            src={imgwebdocu}
-            alt=""
-            className="rounded-lg border-2 border-[#B8FFC7] "
-            draggable={false}
-          />
-        </div>
-        <div className="mt-6 flex justify-center">
-          <p className="text-justify text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            quasi fugiat assumenda eligendi sit consequatur maiores, id non
-            voluptas odio sunt, temporibus
-          </p>
-        </div>
-        <div className="flex justify-center mt-4">
-          <Link to="/Webdocumentaire">
-            <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-              <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-            </button>
-          </Link>
+        <div className="mt-20 sectionReal1 sectionReal2">
+          <div className="petitesectionReal1">
+            
+            <div className="real1sectiondroite  ">
+            <div>
+              <h3 className="text-lg text-white text-center TitreReal1">Webdocumentaire</h3>
+              <h3 className="text-center text-white italic TitreReal2">Au delà du swipe</h3>
+            </div>
+            <div className="">
+            <div className="mt-6 flex justify-center texteReal1">
+              <p className="text-justify text-white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+                quasi fugiat assumenda eligendi sit consequatur maiores, id non
+                voluptas odio sunt, temporibus
+              </p>
+            </div>
+            <div className="flex justify-center mt-4 cta1">
+              <Link to="/Webdocumentaire">
+                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
+                </button>
+              </Link>
+            </div>
+            </div>
+            </div>
+            <div className=" real1sectiongauche  ">
+              <div className="relative justify-center flex mt-8 luciole4 ">
+                <img
+                  src={imgwebdocu}
+                  alt=""
+                  className="rounded-lg border-2 border-[#B8FFC7] "
+                  draggable={false}
+                />
+              </div>
+            </div>
+            </div>
         </div>
 
-        <div className="mt-20 ">
-          <h3 className="text-lg text-white text-center ">Site de campagne</h3>
-          <h3 className="text-center text-white italic">Digi4All</h3>
+
+
+
+
+
+
+
+
+
+
+
+        <div className="mt-20 sectionReal1">
+          <div className="petitesectionReal1">
+            <div className=" real1sectiongauche">
+              <div className="relative justify-center flex mt-8 luciole3 ">
+                <img
+                  src={imgcov11}
+                  alt=""
+                  className="rounded-lg border-2 border-[#B8FFC7] "
+                  draggable={false}
+                />
+              </div>
+            </div>
+            <div className="real1sectiondroite ">
+            <div>
+              <h3 className="text-lg text-white text-center TitreReal1">Datavisualisation</h3>
+              <h3 className="text-center text-white italic TitreReal2">Covid-19 Tracker</h3>
+            </div>
+            <div className="">
+            <div className="mt-6 flex justify-center texteReal1">
+              <p className="text-justify text-white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+                quasi fugiat assumenda eligendi sit consequatur maiores, id non
+                voluptas odio sunt, temporibus
+              </p>
+            </div>
+            <div className="flex justify-center mt-4 cta1">
+              <Link to="/Digi4All">
+                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
+                </button>
+              </Link>
+            </div>
+            </div>
+            </div>
+            </div>
         </div>
-        <div className="relative justify-center flex mt-8 ">
-          <img
-            src={digiforall}
-            alt=""
-            className="rounded-lg border-2 border-[#B8FFC7] "
-            draggable={false}
-          />
-        </div>
-        <div className="mt-6 flex justify-center">
-          <p className="text-justify text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            quasi fugiat assumenda eligendi sit consequatur maiores, id non
-            voluptas odio sunt, temporibus
-          </p>
-        </div>
-        <div className="flex justify-center mt-4">
-          <Link to="/Digi4All">
-            <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-              <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-            </button>
-          </Link>
-        </div>
+
+
+
+
+
 
         {!showReals && (
           <>
