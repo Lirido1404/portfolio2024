@@ -99,14 +99,14 @@
   .reqAjax{
     animation: opacity 1s ease-in-out forwards, scale1 1s ease-in-out forwards;
     opacity: 0;
-    transform: scale(0);
+    transform: scale(70%);
     transform-origin: bottom;
   }
 
   .reqMario{
-    animation: opacity 1s ease-in-out forwards 0.5s, scale1 1s ease-in-out forwards 0.5s;
+    animation: opacity 1s ease-in-out forwards 0.5s, scale1 1s ease-in-out forwards 1s;
     opacity: 0;
-    transform: scale(0);
+    transform: scale(70%);
     transform-origin: bottom;
 
   }
