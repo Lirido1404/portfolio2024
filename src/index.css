@@ -37,12 +37,14 @@ body{
         flex-wrap: wrap;
         align-items: center;
         margin-top: 0 !important;
+        margin-left: 2rem;
     }
 
     .sectiontechlogo{
         flex-direction: row;
         align-items: center;
         margin-top: 0 !important;
+        
         
     }
 
@@ -55,6 +57,7 @@ body{
         flex-wrap: wrap;
         align-items: center;
         margin-top: 0 !important;
+        margin-left: 2rem;
     }
 
     .sectiontechlogo img{
@@ -72,6 +75,7 @@ body{
 
     .barresep2{
         display: block;
+        margin-left: 2rem;
     }
    
     .h2pres{
@@ -126,6 +130,49 @@ body{
 
 
 
+    .petitesectionReal1{
+        display: flex;
+        gap: 8rem;
+    }
+
+    .real1sectiondroite{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    .real1sectiongauche{
+        max-width: 50%;
+    }
+    .real1sectiondroite{
+        max-width: 50%;
+    }
+
+    .TitreReal1,.TitreReal2{
+        text-align: left;
+    }
+
+    .TitreReal1{
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .TitreReal2{
+        font-size: 28px;
+        font-weight: 200;
+        margin-top: 1rem;
+    }
+
+
+    .texteReal1{
+        margin-top: 2.5rem;
+    }
+
+    .cta1{
+        margin-top: 2.5rem;
+        justify-content: start;
+    }
 
 
 
