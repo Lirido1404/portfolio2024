@@ -93,20 +93,25 @@
   .btncta{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0px -1px 4px 0px rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease-in-out;
+  }
+
+  .btncta:hover{
+    background-color: white;
   }
 
 
   .reqAjax{
     animation: opacity 1s ease-in-out forwards, scale1 1s ease-in-out forwards;
     opacity: 0;
-    transform: scale(70%);
+    transform: scale(0%);
     transform-origin: bottom;
   }
 
   .reqMario{
-    animation: opacity 1s ease-in-out forwards 0.5s, scale1 1s ease-in-out forwards 1s;
+    animation: opacity 1s ease-in-out forwards 0.7s, scale1 1s ease-in-out forwards 0.7s;
     opacity: 0;
-    transform: scale(70%);
+    transform: scale(0%);
     transform-origin: bottom;
 
   }

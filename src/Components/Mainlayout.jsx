@@ -36,6 +36,7 @@ import nodejsicon from "../Images/main/Nodejsicon.svg";
 
 import mailicon from "../Images/main/mailicon.png";
 import telicon from "../Images/main/telicon.png";
+import JeuxTypeMario from "../Pages/JeuxTypeMario";
 
 function Mainlayout() {
   const [showReals, setShowReals] = useState(false);
@@ -288,7 +289,7 @@ function Mainlayout() {
             <div className=" real1sectiongauche">
               <div className="relative justify-center flex mt-8 luciole3 ">
                 <img
-                  src={imgcov11}
+                  src={digiforall}
                   alt=""
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
@@ -297,8 +298,8 @@ function Mainlayout() {
             </div>
             <div className="real1sectiondroite ">
             <div>
-              <h3 className="text-lg text-white text-center TitreReal1">Datavisualisation</h3>
-              <h3 className="text-center text-white italic TitreReal2">Covid-19 Tracker</h3>
+              <h3 className="text-lg text-white text-center TitreReal1">Site de campagne</h3>
+              <h3 className="text-center text-white italic TitreReal2">Digi4All</h3>
             </div>
             <div className="">
             <div className="mt-6 flex justify-center texteReal1">
@@ -343,15 +344,33 @@ function Mainlayout() {
         {showReals && (
           <>
             <div className="reqAjax" id="real5">
-              <div className="mt-20  ">
-                <h3 className="text-lg text-white text-center ">
-                  Requêtes Ajax
-                </h3>
-                <h3 className="text-center text-white italic">
-                  Mes mondes imaginaires
-                </h3>
-              </div>
-              <div className="relative justify-center flex mt-4 luciole5">
+            <div className="mt-20 sectionReal1 sectionReal2">
+          <div className="petitesectionReal1">
+            
+            <div className="real1sectiondroite  ">
+            <div>
+              <h3 className="text-lg text-white text-center TitreReal1">Requêtes Ajax</h3>
+              <h3 className="text-center text-white italic TitreReal2">Mes mondes imaginaires</h3>
+            </div>
+            <div className="">
+            <div className="mt-6 flex justify-center texteReal1">
+              <p className="text-justify text-white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+                quasi fugiat assumenda eligendi sit consequatur maiores, id non
+                voluptas odio sunt, temporibus
+              </p>
+            </div>
+            <div className="flex justify-center mt-4 cta1">
+              <Link to="/RequeteAjax">
+                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
+                </button>
+              </Link>
+            </div>
+            </div>
+            </div>
+            <div className=" real1sectiongauche  ">
+              <div className="relative justify-center flex mt-8 luciole4 ">
                 <img
                   src={Ajax}
                   alt=""
@@ -359,53 +378,54 @@ function Mainlayout() {
                   draggable={false}
                 />
               </div>
-              <div className="mt-6 flex justify-center">
-                <p className="text-justify text-white">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Doloremque quasi fugiat assumenda eligendi sit consequatur
-                  maiores, id non voluptas odio sunt, temporibus
-                </p>
-              </div>
-              <div className="flex justify-center mt-4">
-                <Link to="/RequeteAjax">
-                  <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                    <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                  </button>
-                </Link>
-              </div>
+            </div>
+            </div>
+        </div>
             </div>
 
+
+
+
+
+
+
             <div className="reqMario">
-              <div className="mt-20">
-                <h3 className="text-lg text-white text-center">
-                  Jeux type mario
-                </h3>
-                <h3 className="text-center text-white italic">
-                  Javascript &rarr; Canvas
-                </h3>
-              </div>
-              <div className="relative justify-center flex mt-4">
+            <div className="mt-20 sectionReal1">
+          <div className="petitesectionReal1">
+            <div className=" real1sectiongauche">
+              <div className="relative justify-center flex mt-8 luciole3 ">
                 <img
                   src={Mariojs}
                   alt=""
-                  className="rounded-lg border-2 border-[#B8FFC7]"
+                  className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
                 />
               </div>
-              <div className="mt-6 flex justify-center">
-                <p className="text-justify text-white">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Doloremque quasi fugiat assumenda eligendi sit consequatur
-                  maiores, id non voluptas odio sunt, temporibus
-                </p>
-              </div>
-              <div className="flex justify-center mt-4">
-                <Link to="/JeuxMario">
-                  <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                    <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                  </button>
-                </Link>
-              </div>
+            </div>
+            <div className="real1sectiondroite ">
+            <div>
+              <h3 className="text-lg text-white text-center TitreReal1">Jeux Type Mario</h3>
+              <h3 className="text-center text-white italic TitreReal2">Javascript</h3>
+            </div>
+            <div className="">
+            <div className="mt-6 flex justify-center texteReal1">
+              <p className="text-justify text-white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+                quasi fugiat assumenda eligendi sit consequatur maiores, id non
+                voluptas odio sunt, temporibus
+              </p>
+            </div>
+            <div className="flex justify-center mt-4 cta1">
+              <Link to="/JeuxMario">
+                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
+                </button>
+              </Link>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
             </div>
           </>
         )}
