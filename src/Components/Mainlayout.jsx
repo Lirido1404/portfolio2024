@@ -15,7 +15,7 @@ import tailwindlogo from "../Images/tailwindlogo.svg";
 import phplogo from "../Images/phplogo.svg";
 import sqllogo from "../Images/sqllogo2.png";
 import symfonylogo from "../Images/symfonylogo.svg";
-import angular from "../Images/main/angular-svgrepo-com.svg"
+import angular from "../Images/main/angular-svgrepo-com.svg";
 
 import imgcov11 from "../Images/main/imagecov111.png";
 
