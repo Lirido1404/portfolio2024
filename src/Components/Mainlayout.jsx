@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Components/Mainlayout.css";
-import photomp from "../Images/photo12mp.png";
+import photomp from "../Images/mpbut23.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -476,23 +476,38 @@ function Mainlayout() {
 
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full"></div>
 
-        <div className="flex flex-col gap-8 mt-4 ">
-          <h2 className="text-center text-2xl text-white font-bold">
-            A propos de moi
-          </h2>
-          <div className="flex justify-center ">
+        <div className="flex flex-col gap-8 mt-4 sectionpres">
+          <div className="sectionprestt flex-col gap-12">
+          <div className="flex justify-center bg-red-500 sectionphotomp2">
             <img
               src={photomax2}
               alt=""
-              className="w-[80%] h-[80%] rounded-full border-2 border-[#B8FFC7] "
+              className="w-[80%] h-[80%] rounded-full border-2 border-[#B8FFC7] imgsoleilmp "
             />
           </div>
-          <div className="flex justify-center">
-            <p className="text-xl text-justify text-white">
+          <div className="sectionpresdroite">
+          <h2 className="text-center text-2xl text-white font-bold textbsecpres2">
+            A propos de moi
+          </h2>
+          <div className="flex flex-col sectiontextpres">
+            <p className="text-xl text-justify text-white textpresmp2">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
               quae nostrum, minima eligendi quibusdam voluptatibus quidem eos
               quam ipsam nisi.
             </p>
+            <p className="text-xl text-justify text-white textpresmp2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              quae nostrum, minima eligendi quibusdam voluptatibus quidem eos
+              quam ipsam nisi.
+            </p>
+            <a href="../docs/CV_Maxime_Prevot_Dev2_2024_v2.pdf" download type="btn">
+                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">En savoir +</p>
+                </button>
+            </a>
+            
+          </div>
+          </div>
           </div>
         </div>
 

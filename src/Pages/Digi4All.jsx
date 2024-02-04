@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 function Digi4All() {
   return (
-    <motion.div className=''initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
+    <motion.div className=''initial={{opacity:0,x:-20}} animate={{opacity:1,x:0}} exit={{opacity:0,x:-20}} transition={{duration:0.8}}>
         <div className='flex justify-between items-center bg-white border-b-4 border-[#B8FFC7] p-4'>
           <h1 className='text-2xl font-bold'>
             Digi4All
