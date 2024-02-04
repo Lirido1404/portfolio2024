@@ -474,3 +474,6 @@
   order: 1;
 }
 
+.scaleee{
+  animation: scale1 0.06s ease-in-out;
+}

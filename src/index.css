@@ -180,14 +180,14 @@ body{
     }
 
     .sectionphotomp2{
-        max-width: 50%;
-        max-height: 50%;
+        max-width: 40%;
+        max-height: 40%;
     }
 
     .sectionprestt{
         display: flex;
-        margin-top: 5rem;
-        flex-direction: row-reverse !important;
+        margin-top: 1rem;
+        flex-direction: row !important;
     }
 
 
@@ -239,6 +239,10 @@ body{
         font-size: 45px;
         text-align: start;
         margin-top: 5rem;
+    }
+
+    .contactp{
+        font-size: 18px;
     }
  }
 

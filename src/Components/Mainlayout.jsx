@@ -26,7 +26,8 @@ import Mariojs from "../Images/main/Mariojs.png";
 
 import stnic from "../Images/main/stnico6.png";
 import IUT from "../Images/main/IUTlogo.png";
-import photomax2 from "../Images/main/photomax2.jpg";
+
+
 
 import piano from "../Images/main/pianoicon.svg";
 import photo from "../Images/main/photoicon.svg";
@@ -43,8 +44,24 @@ import JeuxTypeMario from "../Pages/JeuxTypeMario";
 import { FaDownload } from "react-icons/fa";
 import CV from "../Images/CV_MP.pdf";
 
+import typescript from "../Images/main/typescript.svg";
+import star from "../Images/star.svg";
+import photomaxime2 from "../Images/main/Photomax/p6.jpg"
+
 function Mainlayout() {
   const [showReals, setShowReals] = useState(false);
+  const [showStar,setShowStar] = useState(false);
+  const [imgIsClicked,setImgIsClicked] = useState(false);
+
+  const handleShowStar =()=>{
+    setShowStar(true);
+  }
+
+
+  const handleNotShowStar =()=>{
+    setShowStar(false);
+  }
+
 
   const handleShowReals = () => {
     setShowReals(!showReals);
@@ -67,6 +84,31 @@ function Mainlayout() {
     setPhotoIsOver(!photoIsOver);
     console.log(photoIsOver)
   }
+
+
+  const photos = [
+    require("../Images/main/Photomax/p1.png"),
+    require("../Images/main/Photomax/p2.jpg"),
+    require("../Images/main/Photomax/p3.jpg"),
+    require("../Images/main/Photomax/p4.png"),
+    require("../Images/main/Photomax/p5.jpg"),
+    require("../Images/main/Photomax/p6.jpg")
+  ];
+  
+  function getRandomPhoto() {
+    const randomIndex = Math.floor(Math.random() * photos.length);
+    return photos[randomIndex];
+  }
+  
+  
+    const [randomPhoto, setRandomPhoto] = useState(getRandomPhoto());
+  
+    function handleImgClick() {
+      setRandomPhoto(getRandomPhoto());
+      setImgIsClicked(true);
+    }
+
+ 
 
   return (
     <div className="">
@@ -121,18 +163,7 @@ function Mainlayout() {
                 </h3>
 
                 <div className="sectionlogo mt-2">
-                  <img
-                    src={htmllogo}
-                    alt=""
-                    className="w-16 h-16"
-                    draggable={false}
-                  />
-                  <img
-                    src={csslogo}
-                    alt=""
-                    className="w-16 h-16"
-                    draggable={false}
-                  />
+                  
                   <img
                     src={javascriptlogo}
                     alt=""
@@ -490,14 +521,8 @@ function Mainlayout() {
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full sepetudes"></div>
 
         <div className="flex flex-col gap-8 mt-4 sectionpres">
-          <div className="sectionprestt flex-col gap-12 ">
-          <div className="flex justify-center items-center sectionphotomp2 h-full">
-            <img
-              src={photomax2}
-              alt=""
-              className="w-[80%] h-[80%] rounded-full border-2 border-[#B8FFC7] imgsoleilmp "
-            />
-          </div>
+          <div className="sectionprestt flex flex-col justify-between h-full w-full ">
+          
           <div className="sectionpresdroite ">
           <h2 className="text-center text-2xl text-white font-bold textbsecpres2">
             A propos de moi
@@ -529,6 +554,13 @@ function Mainlayout() {
             
           </div>
           </div>
+          <div className="flex justify-center items-center sectionphotomp2 w-full h-full mt-14 ">
+            <img
+              src={imgIsClicked ? randomPhoto : photomaxime2 }
+              alt=""
+              className="w-[300px] h-[300px] object-cover rounded-full border-2 border-[#B8FFC7] imgsoleilmp "
+            />
+          </div>
           </div>
         </div>
 
@@ -539,25 +571,44 @@ function Mainlayout() {
         </h2>
 
         <div className="flex gap-4 justify-center mt-6 ensemblepassions">
-          <div className="luciole7">
+          <motion.div className="luciole7" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}}>
             
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions">
-              <img src={piano} alt="" className="w-8 h-8 imgpassions2" />
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions cursor-pointer">
+              <img src={piano} alt="" className="w-8 h-8 imgpassions2"draggable="false" />
             </div>
             
+          </motion.div>
+
+          <div className="flex flex-col">
+          <motion.div className="luciole7 relative" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}} onClick={handleImgClick} onMouseUp={handleNotShowStar} onMouseDown={handleShowStar}>
+            
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative cursor-pointer hover:bg-[#B8FFC7] hover:border-2 hover:border-white ease-out duration-500" onClick={handleImgClick} > 
+                       
+              <img src={photo} alt="" className="w-8 h-8 imgpassions2" draggable="false" onClick={handleImgClick}/>
+              <div className="absolute top-[-15px] right-0 rounded-full border-2 border-[#B8FFC7] overflow-hidden bg-red-500">
+              <img src={randomPhoto} alt="" className="w-12 h-12 object-cover" />
+            </div>
+            {
+              showStar && (
+                <>
+                <div className="absolute top-6 left-6 scaleee">
+            <img src={star} alt="" className="w-8 h-8 "/>
+
+            </div>
+                </>
+              )
+            }
+            </div>
+          
+          <p className="text-center text-white font-bold mt-2">Click !</p>
+          </motion.div>
           </div>
 
-          <div className="luciole7">
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative" >            
-              <img src={photo} alt="" className="w-8 h-8 imgpassions2" />
+          <motion.div className="luciole7" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}}>
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions cursor-pointer">
+              <img src={book} alt="" className="w-8 h-8 imgpassions2" draggable="false"/>
             </div>
-          </div>
-
-          <div className="luciole7">
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions">
-              <img src={book} alt="" className="w-8 h-8 imgpassions2" />
-            </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full sepetudes"></div>
@@ -568,10 +619,18 @@ function Mainlayout() {
 
         <div className="flex flex-col mt-10 gap-6 divicondev">
           <div className=" flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1">
-            <div className="flex justify-center">
-              <img src={nextjslogo} alt="" className="h-32 w-32" />
+            <div className="flex justify-center items-center">
+              <span className="flex flex-col">
+                <img src={nextjslogo} alt="" className="h-32 w-32" />
+                <p className="text-center font-bold">Next.js</p>
+              </span>
+              <span className="flex flex-col ">
+                <img src={nodejsicon} alt="" className="h-24 w-24 m-4" />
+                <p className="text-center font-bold ">Node.js</p>
+              </span>
+              
             </div>
-            <p className="text-center font-bold">Nextjs</p>
+            
 
             <div className="h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1"></div>
 
@@ -585,11 +644,11 @@ function Mainlayout() {
           </div>
 
           <div className=" flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1">
-            <div className="flex justify-center">
-              <img src={nodejsicon} alt="" className="h-24 w-24" />
+            <div className="flex justify-center mt-2">
+              <img src={typescript} alt="" className="h-24 w-24" />
             </div>
 
-            <p className="text-center font-bold mt-4">Nodejs</p>
+            <p className="text-center font-bold mt-4">Typescript</p>
 
             <div className="h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1"></div>
 
@@ -609,12 +668,12 @@ function Mainlayout() {
         >
           <div className="flex gap-2 items-center">
             <img src={mailicon} alt="" className="w-6 h-6" />
-            <p className="text-[12px]">maxime.prevot1804kz@gmail.com</p>
+            <p className="text-[12px] contactp">maxime.prevot1804kz@gmail.com</p>
           </div>
 
           <div className="flex gap-2 items-center">
             <img src={telicon} alt="" className="w-6 h-6" />
-            <p className="text-[12px]">07 81 78 72 72</p>
+            <p className="text-[12px] contactp">07 81 78 72 72</p>
           </div>
         </footer>
       </div>
