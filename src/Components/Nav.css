@@ -4,9 +4,7 @@
 *{
 scroll-behavior: smooth;
 }
-.animnav2{
-  animation: scale1 0.5s cubic-bezier(0, 0.71, 0.2, 1.01) forwards;
-}
+
 
 
 
@@ -53,15 +51,6 @@ li{
     }
   }
   
-  @keyframes scale1{
-    from {
-      transform: scale(0.7);
-    }
   
-    to {
-     transform: scale(1.1);
-    }
-  }
- 
 
  

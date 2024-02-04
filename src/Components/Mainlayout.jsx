@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Components/Mainlayout.css";
-import photomp from "../Images/mpbut23.png";
+import photomp from "../Images/mpbut24.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -39,6 +39,10 @@ import mailicon from "../Images/main/mailicon.png";
 import telicon from "../Images/main/telicon.png";
 import JeuxTypeMario from "../Pages/JeuxTypeMario";
 
+
+import { FaDownload } from "react-icons/fa";
+import CV from "../Images/CV_MP.pdf";
+
 function Mainlayout() {
   const [showReals, setShowReals] = useState(false);
 
@@ -54,6 +58,15 @@ function Mainlayout() {
       }
     }
   }, [showReals]);
+
+
+
+  const [photoIsOver,setPhotoIsOver] = useState(false);
+
+  const handlePhotoAnim =()=>{
+    setPhotoIsOver(!photoIsOver);
+    console.log(photoIsOver)
+  }
 
   return (
     <div className="">
@@ -434,7 +447,7 @@ function Mainlayout() {
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full"></div>
 
         <h2
-          className="text-center text-2xl mt-4 text-white font-bold "
+          className="text-center text-2xl mt-4 text-white font-bold etudestitre "
           id="profil"
         >
           Mes études
@@ -459,7 +472,7 @@ function Mainlayout() {
             <div className=" flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes2  p-4">
               <h3 className="text-center mt-6 font-bold">BUT MMI</h3>
               <p className="text-center text-sm">
-                (<span>M</span>étiers du <span>M</span>ultimédia et de l’
+                (<span>M</span>étiers du <span>M</span>ultimédia et de l'
                 <span>I</span>nternet)
               </p>
 
@@ -474,22 +487,22 @@ function Mainlayout() {
           </div>
         </div>
 
-        <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full"></div>
+        <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full sepetudes"></div>
 
         <div className="flex flex-col gap-8 mt-4 sectionpres">
-          <div className="sectionprestt flex-col gap-12">
-          <div className="flex justify-center bg-red-500 sectionphotomp2">
+          <div className="sectionprestt flex-col gap-12 ">
+          <div className="flex justify-center items-center sectionphotomp2 h-full">
             <img
               src={photomax2}
               alt=""
               className="w-[80%] h-[80%] rounded-full border-2 border-[#B8FFC7] imgsoleilmp "
             />
           </div>
-          <div className="sectionpresdroite">
+          <div className="sectionpresdroite ">
           <h2 className="text-center text-2xl text-white font-bold textbsecpres2">
             A propos de moi
           </h2>
-          <div className="flex flex-col sectiontextpres">
+          <div className="flex flex-col sectiontextpres flex-wrap">
             <p className="text-xl text-justify text-white textpresmp2">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
               quae nostrum, minima eligendi quibusdam voluptatibus quidem eos
@@ -500,11 +513,19 @@ function Mainlayout() {
               quae nostrum, minima eligendi quibusdam voluptatibus quidem eos
               quam ipsam nisi.
             </p>
-            <a href="../docs/CV_Maxime_Prevot_Dev2_2024_v2.pdf" download type="btn">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">En savoir +</p>
+            <div className="flex justify-center btncv">
+            <a href={CV} download type="btn">
+                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta flex justify-center gap-2 items-center">
+                      
+                      <FaDownload/>
+                      <p className="font-bold">
+                        CV
+                      </p>
+
                 </button>
             </a>
+            </div>
+            
             
           </div>
           </div>
@@ -513,33 +534,35 @@ function Mainlayout() {
 
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full"></div>
 
-        <h2 className="text-center text-2xl text-white font-bold mt-4">
+        <h2 className="text-center text-2xl text-white font-bold mt-4 textpassionss">
           Mes passions
         </h2>
 
-        <div className="flex gap-4 justify-center mt-6">
+        <div className="flex gap-4 justify-center mt-6 ensemblepassions">
           <div className="luciole7">
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20">
-              <img src={piano} alt="" className="w-8 h-8" />
+            
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions">
+              <img src={piano} alt="" className="w-8 h-8 imgpassions2" />
+            </div>
+            
+          </div>
+
+          <div className="luciole7">
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative" >            
+              <img src={photo} alt="" className="w-8 h-8 imgpassions2" />
             </div>
           </div>
 
           <div className="luciole7">
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20">
-              <img src={photo} alt="" className="w-8 h-8" />
-            </div>
-          </div>
-
-          <div className="luciole7">
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20">
-              <img src={book} alt="" className="w-8 h-8" />
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions">
+              <img src={book} alt="" className="w-8 h-8 imgpassions2" />
             </div>
           </div>
         </div>
 
-        <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full"></div>
+        <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full sepetudes"></div>
 
-        <h2 className="text-center text-2xl text-white font-bold mt-4">
+        <h2 className="text-center text-2xl text-white font-bold mt-4 textpassionss">
           Mes objectifs
         </h2>
 
