@@ -138,7 +138,7 @@ function Mainlayout() {
             </div>
             <div className="mt-2">
               <h2 className="text-[18px] text-white w-[25ch] h2pres ">
-                Salut, moi c’est Maxime Prévot, un jeune passionné par le
+                Salut, moi c'est Maxime Prévot, un jeune passionné par le
                 développement web basé en France, sur Paris 📍
               </h2>
               <div className="flex gap-6 mt-6 logores">
