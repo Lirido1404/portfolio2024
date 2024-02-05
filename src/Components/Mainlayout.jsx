@@ -47,11 +47,26 @@ import CV from "../Images/CV_MP.pdf";
 import typescript from "../Images/main/typescript.svg";
 import star from "../Images/star.svg";
 import photomaxime2 from "../Images/main/Photomax/p6.jpg"
+import football from "../Images/main/football2.svg";
+
+
+
 
 function Mainlayout() {
   const [showReals, setShowReals] = useState(false);
   const [showStar,setShowStar] = useState(false);
   const [imgIsClicked,setImgIsClicked] = useState(false);
+  const [photoOverForBorder,setPhotoOverForBorder] = useState(false);
+
+
+
+  const handleBorderPhoto =()=>{
+    setPhotoOverForBorder(true);
+  } 
+
+  const handleNotBorderPhoto =()=>{
+    setPhotoOverForBorder(false);
+  } 
 
   const handleShowStar =()=>{
     setShowStar(true);
@@ -555,12 +570,15 @@ function Mainlayout() {
           </div>
           </div>
           <div className="flex justify-center items-center sectionphotomp2 w-full h-full mt-14 ">
-            <img
-              src={imgIsClicked ? randomPhoto : photomaxime2 }
-              alt=""
-              className="w-[300px] h-[300px] object-cover rounded-full border-2 border-[#B8FFC7] imgsoleilmp "
-            />
-          </div>
+  <motion.img
+    src={imgIsClicked ? randomPhoto : photomaxime2 }
+    key={randomPhoto}
+    alt=""
+    className="w-[300px] h-[300px] rounded-full border-2 border-[#B8FFC7] imgsoleilmp imgeffect"
+    whileHover={{ scale: 1.1 }} // Appliquer l'effet de scale au survol
+    transition={{ duration: 0.5 }} // Définir la durée de la transition
+  />
+</div>
           </div>
         </div>
 
@@ -580,13 +598,13 @@ function Mainlayout() {
           </motion.div>
 
           <div className="flex flex-col">
-          <motion.div className="luciole7 relative" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}} onClick={handleImgClick} onMouseUp={handleNotShowStar} onMouseDown={handleShowStar}>
+          <motion.div className="luciole7 relative" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}} onClick={handleImgClick} onMouseUp={handleNotShowStar} onMouseDown={handleShowStar} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto}>
             
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative cursor-pointer hover:bg-[#B8FFC7] hover:border-2 hover:border-white ease-out duration-500" onClick={handleImgClick} > 
+            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative cursor-pointer hover:bg-[#B8FFC7] hover:border-2 hover:border-white ease-out duration-500" onClick={handleImgClick} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto} > 
                        
-              <img src={photo} alt="" className="w-8 h-8 imgpassions2" draggable="false" onClick={handleImgClick}/>
-              <div className="absolute top-[-15px] right-0 rounded-full border-2 border-[#B8FFC7] overflow-hidden bg-red-500">
-              <img src={randomPhoto} alt="" className="w-12 h-12 object-cover" />
+              <img src={photo} alt="" className="w-8 h-8 imgpassions2" draggable="false" onClick={handleImgClick} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto}/>
+              <div className={`absolute top-[-15px] right-0 rounded-full border-2 ${photoOverForBorder ? "border-white" : "border-[#B8FFC7]"} overflow-hidden fondimg`} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto}>
+              <motion.img key={randomPhoto} src={randomPhoto} transition={{ duration: 0.5 }} alt="" className="w-12 h-12 object-cover imgeffect" onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto} />
             </div>
             {
               showStar && (
@@ -606,7 +624,7 @@ function Mainlayout() {
 
           <motion.div className="luciole7" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}}>
             <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions cursor-pointer">
-              <img src={book} alt="" className="w-8 h-8 imgpassions2" draggable="false"/>
+              <img src={football} alt="" className="w-12 h-12 imgpassions2" draggable="false"/>
             </div>
           </motion.div>
         </div>
