@@ -187,6 +187,12 @@ function Mainlayout() {
                     draggable={false}
                   />
                   <img
+                    src={"/typescriptt.png"}
+                    alt=""
+                    className="w-16 h-16"
+                    draggable={false}
+                  />
+                  <img
                     src={tailwindlogo}
                     alt=""
                     className="w-16 h-16"
@@ -204,7 +210,19 @@ function Mainlayout() {
 
                 <div className="sectionlogoback mt-2 ">
                   <img
+                    src={"symfonylogoo1.png"}
+                    alt=""
+                    className="w-16 h-16"
+                    draggable={false}
+                  />
+                  <img
                     src={phplogo}
+                    alt=""
+                    className="w-16 h-16"
+                    draggable={false}
+                  />
+                  <img
+                    src={sqllogo}
                     alt=""
                     className="w-16 h-16"
                     draggable={false}
@@ -216,13 +234,7 @@ function Mainlayout() {
                     draggable={false}
                   />
                   <img
-                    src={sqllogo}
-                    alt=""
-                    className="w-16 h-16"
-                    draggable={false}
-                  />
-                  <img
-                    src={symfonylogo}
+                    src={"/mongoodb.svg"}
                     alt=""
                     className="w-16 h-16"
                     draggable={false}
@@ -260,11 +272,18 @@ function Mainlayout() {
                     maiores, id non voluptas odio sunt, temporibus
                   </p>
                 </div>
-                <div className="flex justify-center mt-4 cta1">
+                <div className="flex justify-center mt-4 cta1 gap-4 items-center">
                   <Link to="/Digi4All">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
                       <p className="text-xl font-bold opacity-90 ">
                         En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                  <Link to="https://hameau-gaulois.vercel.app/" target="blank">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">
+                        Accéder au projet
                       </p>
                     </button>
                   </Link>
@@ -279,8 +298,19 @@ function Mainlayout() {
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
                 />
-                <div className="h-8 w-8 bg-red-500 absolute right-8 bottom-2">
-
+                <div className=" absolute right-2 bottom-2 flex gap-1">
+                  <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <span>
+                      <img src={"/profilsvg1.svg"} className="w-5 h-5" alt="" />
+                    </span>
+                    <p className="text-sm font-bold">Personnel</p>
+                  </div>
+                  <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <span>
+                      <img src={"/timee.svg"} className="w-5 h-5" alt="" />
+                    </span>
+                    <p className="text-sm font-bold">En cours</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -297,6 +327,20 @@ function Mainlayout() {
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
                 />
+                <div className=" absolute right-2 bottom-2 flex gap-1">
+                  <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
+                    <span>
+                      <img src={"/profilsvg1.svg"} className="w-5 h-5" alt="" />
+                    </span>
+                    <p className="text-sm font-bold">Personnel</p>
+                  </div>
+                  <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
+                    <span>
+                      <img src={"/pausee.svg"} className="w-5 h-5" alt="" />
+                    </span>
+                    <p className="text-sm font-bold">En pause</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="real1sectiondroite ">
@@ -316,11 +360,18 @@ function Mainlayout() {
                     maiores, id non voluptas odio sunt, temporibus
                   </p>
                 </div>
-                <div className="flex justify-center mt-4 cta1">
-                  <Link to="/CovidTracker">
+                <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                  <Link to="/Digi4All">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
                       <p className="text-xl font-bold opacity-90 ">
                         En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                  <Link to="https://hameau-gaulois.vercel.app/" target="blank">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">
+                        Accéder au projet
                       </p>
                     </button>
                   </Link>
@@ -368,6 +419,20 @@ function Mainlayout() {
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
                 />
+                <div className=" absolute right-2 bottom-2 flex gap-1">
+                  <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <span>
+                      <img src={"/school.svg"} className="w-5 h-5" alt="" />
+                    </span>
+                    <p className="text-sm font-bold">Scolaire</p>
+                  </div>
+                  <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <span>
+                      <img src={"/checkk.svg"} className="w-5 h-5" alt="" />
+                    </span>
+                    <p className="text-sm font-bold">Terminé</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -401,6 +466,28 @@ function Mainlayout() {
                         className="rounded-lg border-2 border-[#B8FFC7] "
                         draggable={false}
                       />
+                      <div className=" absolute right-2 bottom-2 flex gap-1">
+                        <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
+                          <span>
+                            <img
+                              src={"/school.svg"}
+                              className="w-5 h-5"
+                              alt=""
+                            />
+                          </span>
+                          <p className="text-sm font-bold">Scolaire</p>
+                        </div>
+                        <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
+                          <span>
+                            <img
+                              src={"/checkk.svg"}
+                              className="w-5 h-5"
+                              alt=""
+                            />
+                          </span>
+                          <p className="text-sm font-bold">Terminé</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="real1sectiondroite ">
@@ -476,6 +563,28 @@ function Mainlayout() {
                         className="rounded-lg border-2 border-[#B8FFC7] "
                         draggable={false}
                       />
+                      <div className=" absolute right-2 bottom-2 flex gap-1">
+                        <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
+                          <span>
+                            <img
+                              src={"/school.svg"}
+                              className="w-5 h-5"
+                              alt=""
+                            />
+                          </span>
+                          <p className="text-sm font-bold">Scolaire</p>
+                        </div>
+                        <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
+                          <span>
+                            <img
+                              src={"/checkk.svg"}
+                              className="w-5 h-5"
+                              alt=""
+                            />
+                          </span>
+                          <p className="text-sm font-bold">Terminé</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -673,12 +782,8 @@ function Mainlayout() {
           <div className=" flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1">
             <div className="flex justify-center items-center">
               <span className="flex flex-col">
-                <img src={nextjslogo} alt="" className="h-32 w-32" />
-                <p className="text-center font-bold">Next.js</p>
-              </span>
-              <span className="flex flex-col ">
-                <img src={nodejsicon} alt="" className="h-24 w-24 m-4" />
-                <p className="text-center font-bold ">Node.js</p>
+                <img src={reactlogo} alt="" className="h-32 w-32" />
+                <p className="text-center font-bold text-black">React Native</p>
               </span>
             </div>
 
@@ -686,9 +791,11 @@ function Mainlayout() {
 
             <div className="flex justify-center">
               <p className="text-sm text-justify p-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-                sed adipisci doloremque, nostrum quia repellat saepe iusto eaque
-                laboriosam voluptas!
+                Au-delà des sites web, j'aimerai être capable de réaliser des
+                applications complètes. J'aime beaucoup le concept de fluidité
+                qu'on peut retrouver dans les applications modernes, mon
+                objectifs est de réaliser des applications avec ce même niveau
+                de performance et de fluidité.
               </p>
             </div>
           </div>
