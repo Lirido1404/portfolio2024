@@ -27,8 +27,6 @@ import Mariojs from "../Images/main/Mariojs.png";
 import stnic from "../Images/main/stnico6.png";
 import IUT from "../Images/main/IUTlogo.png";
 
-
-
 import piano from "../Images/main/pianoicon.svg";
 import photo from "../Images/main/photoicon.svg";
 import book from "../Images/main/bookicon.svg";
@@ -40,43 +38,36 @@ import mailicon from "../Images/main/mailicon.png";
 import telicon from "../Images/main/telicon.png";
 import JeuxTypeMario from "../Pages/JeuxTypeMario";
 
-
 import { FaDownload } from "react-icons/fa";
 import CV from "../Images/CV_MP.pdf";
 
 import typescript from "../Images/main/typescript.svg";
 import star from "../Images/star.svg";
-import photomaxime2 from "../Images/main/Photomax/p6.jpg"
+import photomaxime2 from "../Images/main/Photomax/p6.jpg";
 import football from "../Images/main/football2.svg";
-
-
-
+import nextjslogoo from "../Images/nextjslogoo.png";
 
 function Mainlayout() {
   const [showReals, setShowReals] = useState(false);
-  const [showStar,setShowStar] = useState(false);
-  const [imgIsClicked,setImgIsClicked] = useState(false);
-  const [photoOverForBorder,setPhotoOverForBorder] = useState(false);
+  const [showStar, setShowStar] = useState(false);
+  const [imgIsClicked, setImgIsClicked] = useState(false);
+  const [photoOverForBorder, setPhotoOverForBorder] = useState(false);
 
-
-
-  const handleBorderPhoto =()=>{
+  const handleBorderPhoto = () => {
     setPhotoOverForBorder(true);
-  } 
+  };
 
-  const handleNotBorderPhoto =()=>{
+  const handleNotBorderPhoto = () => {
     setPhotoOverForBorder(false);
-  } 
+  };
 
-  const handleShowStar =()=>{
+  const handleShowStar = () => {
     setShowStar(true);
-  }
+  };
 
-
-  const handleNotShowStar =()=>{
+  const handleNotShowStar = () => {
     setShowStar(false);
-  }
-
+  };
 
   const handleShowReals = () => {
     setShowReals(!showReals);
@@ -91,15 +82,12 @@ function Mainlayout() {
     }
   }, [showReals]);
 
+  const [photoIsOver, setPhotoIsOver] = useState(false);
 
-
-  const [photoIsOver,setPhotoIsOver] = useState(false);
-
-  const handlePhotoAnim =()=>{
+  const handlePhotoAnim = () => {
     setPhotoIsOver(!photoIsOver);
-    console.log(photoIsOver)
-  }
-
+    console.log(photoIsOver);
+  };
 
   const photos = [
     require("../Images/main/Photomax/p1.png"),
@@ -107,42 +95,34 @@ function Mainlayout() {
     require("../Images/main/Photomax/p3.jpg"),
     require("../Images/main/Photomax/p4.png"),
     require("../Images/main/Photomax/p5.jpg"),
-    require("../Images/main/Photomax/p6.jpg")
+    require("../Images/main/Photomax/p6.jpg"),
   ];
-  
+
   function getRandomPhoto() {
     const randomIndex = Math.floor(Math.random() * photos.length);
     return photos[randomIndex];
   }
-  
-  
-    const [randomPhoto, setRandomPhoto] = useState(getRandomPhoto());
-  
-    function handleImgClick() {
-      setRandomPhoto(getRandomPhoto());
-      setImgIsClicked(true);
-    }
 
- 
+  const [randomPhoto, setRandomPhoto] = useState(getRandomPhoto());
+
+  function handleImgClick() {
+    setRandomPhoto(getRandomPhoto());
+    setImgIsClicked(true);
+  }
 
   return (
     <div className="">
       <div className="w-[70%] mx-auto">
         <div className="contun mt-40">
           <header className="flex justify-center items-start element1 ">
-            
-              
-                <div className="photompcont">
-                <img
-                  src={photomp}
-                  alt=""
-                  className="photomp "
-                  draggable={false}
-                />
-                </div>
-             
-
-              
+            <div className="photompcont">
+              <img
+                src={photomp}
+                alt=""
+                className="photomp "
+                draggable={false}
+              />
+            </div>
           </header>
 
           <div className=" element2 ">
@@ -157,8 +137,18 @@ function Mainlayout() {
                 développement web basé en France, sur Paris 📍
               </h2>
               <div className="flex gap-6 mt-6 logores">
-                <img src={linkedIn} alt="" draggable={false}  className="imgres"/>
-                <img src={githublogo} alt="" draggable={false} className="imgres" />
+                <img
+                  src={linkedIn}
+                  alt=""
+                  draggable={false}
+                  className="imgres"
+                />
+                <img
+                  src={githublogo}
+                  alt=""
+                  draggable={false}
+                  className="imgres"
+                />
               </div>
             </div>
             <div className="sectiontechlogocont">
@@ -178,21 +168,20 @@ function Mainlayout() {
                 </h3>
 
                 <div className="sectionlogo mt-2">
-                  
                   <img
-                    src={javascriptlogo}
-                    alt=""
-                    className="w-16 h-16 p-1"
-                    draggable={false}
-                  />
-                  <img
-                    src={angular}
+                    src={"/nextjslogoo.png"}
                     alt=""
                     className="w-18 h-18"
                     draggable={false}
                   />
                   <img
                     src={reactlogo}
+                    alt=""
+                    className="w-18 h-18"
+                    draggable={false}
+                  />
+                  <img
+                    src={angular}
                     alt=""
                     className="w-16 h-16"
                     draggable={false}
@@ -221,13 +210,13 @@ function Mainlayout() {
                     draggable={false}
                   />
                   <img
-                    src={sqllogo}
+                    src={nodejsicon}
                     alt=""
                     className="w-14 h-14"
                     draggable={false}
                   />
                   <img
-                    src={symfonylogo}
+                    src={sqllogo}
                     alt=""
                     className="w-16 h-16"
                     draggable={false}
@@ -238,18 +227,55 @@ function Mainlayout() {
           </div>
         </div>
 
-
-
-
         <div className="h-1 w-[70%] mx-auto bg-[#B8FFC7] mt-14 rounded-full hidden sepP1Real"></div>
-
-
-
 
         <div className="mt-10 " id="real">
           <h3 className="text-lg text-white text-center font-bold projetstext">
             Quelques-uns de mes projets
           </h3>
+        </div>
+
+        <div className="mt-20 sectionReal1">
+          <div className="petitesectionReal1">
+            <div className=" real1sectiongauche">
+              <div className="relative justify-center flex mt-8 luciole3 ">
+                <img
+                  src={"/AHG.png"}
+                  alt=""
+                  className="rounded-lg border-2 border-[#B8FFC7] "
+                  draggable={false}
+                />
+              </div>
+            </div>
+            <div className="real1sectiondroite ">
+              <div>
+                <h3 className="text-lg text-white text-center TitreReal1">
+                  Site d'association
+                </h3>
+                <h3 className="text-center text-white italic TitreReal2">
+                  HameauGaulois
+                </h3>
+              </div>
+              <div className="">
+                <div className="mt-6 flex justify-center texteReal1">
+                  <p className="text-justify text-white">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloremque quasi fugiat assumenda eligendi sit consequatur
+                    maiores, id non voluptas odio sunt, temporibus
+                  </p>
+                </div>
+                <div className="flex justify-center mt-4 cta1">
+                  <Link to="/Digi4All">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">
+                        En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="mt-20 sectionReal1">
@@ -265,126 +291,78 @@ function Mainlayout() {
               </div>
             </div>
             <div className="real1sectiondroite ">
-            <div>
-              <h3 className="text-lg text-white text-center TitreReal1">Datavisualisation</h3>
-              <h3 className="text-center text-white italic TitreReal2">Covid-19 Tracker</h3>
+              <div>
+                <h3 className="text-lg text-white text-center TitreReal1">
+                  Datavisualisation
+                </h3>
+                <h3 className="text-center text-white italic TitreReal2">
+                  Covid-19 Tracker
+                </h3>
+              </div>
+              <div className="">
+                <div className="mt-6 flex justify-center texteReal1">
+                  <p className="text-justify text-white">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloremque quasi fugiat assumenda eligendi sit consequatur
+                    maiores, id non voluptas odio sunt, temporibus
+                  </p>
+                </div>
+                <div className="flex justify-center mt-4 cta1">
+                  <Link to="/CovidTracker">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">
+                        En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="">
-            <div className="mt-6 flex justify-center texteReal1">
-              <p className="text-justify text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-                quasi fugiat assumenda eligendi sit consequatur maiores, id non
-                voluptas odio sunt, temporibus
-              </p>
-            </div>
-            <div className="flex justify-center mt-4 cta1">
-              <Link to="/CovidTracker">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                </button>
-              </Link>
-            </div>
-            </div>
-            </div>
-            </div>
+          </div>
         </div>
-
-
-
-
-
-
 
         <div className="mt-20 sectionReal1 sectionReal2">
           <div className="petitesectionReal1">
-            
             <div className="real1sectiondroite  ">
-            <div>
-              <h3 className="text-lg text-white text-center TitreReal1">Webdocumentaire</h3>
-              <h3 className="text-center text-white italic TitreReal2">Au delà du swipe</h3>
-            </div>
-            <div className="">
-            <div className="mt-6 flex justify-center texteReal1">
-              <p className="text-justify text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-                quasi fugiat assumenda eligendi sit consequatur maiores, id non
-                voluptas odio sunt, temporibus
-              </p>
-            </div>
-            <div className="flex justify-center mt-4 cta1">
-              <Link to="/Webdocumentaire">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                </button>
-              </Link>
-            </div>
-            </div>
+              <div>
+                <h3 className="text-lg text-white text-center TitreReal1">
+                  Contact-App
+                </h3>
+                <h3 className="text-center text-white italic TitreReal2">
+                 Répertoire de contact
+                </h3>
+              </div>
+              <div className="">
+                <div className="mt-6 flex justify-center texteReal1">
+                  <p className="text-justify text-white">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloremque quasi fugiat assumenda eligendi sit consequatur
+                    maiores, id non voluptas odio sunt, temporibus
+                  </p>
+                </div>
+                <div className="flex justify-center mt-4 cta1">
+                  <Link to="/Webdocumentaire">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">
+                        En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className=" real1sectiongauche  ">
               <div className="relative justify-center flex mt-8 luciole4 ">
                 <img
-                  src={imgwebdocu}
+                  src={'/Contact-App.png'}
                   alt=""
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
                 />
               </div>
             </div>
-            </div>
+          </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div className="mt-20 sectionReal1">
-          <div className="petitesectionReal1">
-            <div className=" real1sectiongauche">
-              <div className="relative justify-center flex mt-8 luciole3 ">
-                <img
-                  src={digiforall}
-                  alt=""
-                  className="rounded-lg border-2 border-[#B8FFC7] "
-                  draggable={false}
-                />
-              </div>
-            </div>
-            <div className="real1sectiondroite ">
-            <div>
-              <h3 className="text-lg text-white text-center TitreReal1">Site de campagne</h3>
-              <h3 className="text-center text-white italic TitreReal2">Digi4All</h3>
-            </div>
-            <div className="">
-            <div className="mt-6 flex justify-center texteReal1">
-              <p className="text-justify text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-                quasi fugiat assumenda eligendi sit consequatur maiores, id non
-                voluptas odio sunt, temporibus
-              </p>
-            </div>
-            <div className="flex justify-center mt-4 cta1">
-              <Link to="/Digi4All">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                </button>
-              </Link>
-            </div>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-
-
-
 
         {!showReals && (
           <>
@@ -404,88 +382,95 @@ function Mainlayout() {
         {showReals && (
           <>
             <div className="reqAjax" id="real5">
-            <div className="mt-20 sectionReal1 sectionReal2">
-          <div className="petitesectionReal1">
-            
-            <div className="real1sectiondroite  ">
-            <div>
-              <h3 className="text-lg text-white text-center TitreReal1">Requêtes Ajax</h3>
-              <h3 className="text-center text-white italic TitreReal2">Mes mondes imaginaires</h3>
-            </div>
-            <div className="">
-            <div className="mt-6 flex justify-center texteReal1">
-              <p className="text-justify text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-                quasi fugiat assumenda eligendi sit consequatur maiores, id non
-                voluptas odio sunt, temporibus
-              </p>
-            </div>
-            <div className="flex justify-center mt-4 cta1">
-              <Link to="/RequeteAjax">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                </button>
-              </Link>
-            </div>
-            </div>
-            </div>
-            <div className=" real1sectiongauche  ">
-              <div className="relative justify-center flex mt-8 luciole4 ">
-                <img
-                  src={Ajax}
-                  alt=""
-                  className="rounded-lg border-2 border-[#B8FFC7] "
-                  draggable={false}
-                />
+              <div className="mt-20 sectionReal1">
+                <div className="petitesectionReal1">
+                  <div className=" real1sectiongauche">
+                    <div className="relative justify-center flex mt-8 luciole3 ">
+                      <img
+                        src={imgcov11}
+                        alt=""
+                        className="rounded-lg border-2 border-[#B8FFC7] "
+                        draggable={false}
+                      />
+                    </div>
+                  </div>
+                  <div className="real1sectiondroite ">
+                    <div>
+                      <h3 className="text-lg text-white text-center TitreReal1">
+                        Datavisualisation
+                      </h3>
+                      <h3 className="text-center text-white italic TitreReal2">
+                        Covid-19 Tracker
+                      </h3>
+                    </div>
+                    <div className="">
+                      <div className="mt-6 flex justify-center texteReal1">
+                        <p className="text-justify text-white">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Doloremque quasi fugiat assumenda eligendi sit
+                          consequatur maiores, id non voluptas odio sunt,
+                          temporibus
+                        </p>
+                      </div>
+                      <div className="flex justify-center mt-4 cta1">
+                        <Link to="/CovidTracker">
+                          <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                            <p className="text-xl font-bold opacity-90 ">
+                              En savoir +
+                            </p>
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            </div>
-        </div>
-            </div>
-
-
-
-
-
-
 
             <div className="reqMario">
-            <div className="mt-20 sectionReal1">
-          <div className="petitesectionReal1">
-            <div className=" real1sectiongauche">
-              <div className="relative justify-center flex mt-8 luciole3 ">
-                <img
-                  src={Mariojs}
-                  alt=""
-                  className="rounded-lg border-2 border-[#B8FFC7] "
-                  draggable={false}
-                />
+              <div className="mt-20 sectionReal1 sectionReal2">
+                <div className="petitesectionReal1">
+                  <div className="real1sectiondroite  ">
+                    <div>
+                      <h3 className="text-lg text-white text-center TitreReal1">
+                        Webdocumentaire
+                      </h3>
+                      <h3 className="text-center text-white italic TitreReal2">
+                        Au delà du swipe
+                      </h3>
+                    </div>
+                    <div className="">
+                      <div className="mt-6 flex justify-center texteReal1">
+                        <p className="text-justify text-white">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Doloremque quasi fugiat assumenda eligendi sit
+                          consequatur maiores, id non voluptas odio sunt,
+                          temporibus
+                        </p>
+                      </div>
+                      <div className="flex justify-center mt-4 cta1">
+                        <Link to="/Webdocumentaire">
+                          <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                            <p className="text-xl font-bold opacity-90 ">
+                              En savoir +
+                            </p>
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className=" real1sectiongauche  ">
+                    <div className="relative justify-center flex mt-8 luciole4 ">
+                      <img
+                        src={imgwebdocu}
+                        alt=""
+                        className="rounded-lg border-2 border-[#B8FFC7] "
+                        draggable={false}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="real1sectiondroite ">
-            <div>
-              <h3 className="text-lg text-white text-center TitreReal1">Jeux Type Mario</h3>
-              <h3 className="text-center text-white italic TitreReal2">Javascript</h3>
-            </div>
-            <div className="">
-            <div className="mt-6 flex justify-center texteReal1">
-              <p className="text-justify text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-                quasi fugiat assumenda eligendi sit consequatur maiores, id non
-                voluptas odio sunt, temporibus
-              </p>
-            </div>
-            <div className="flex justify-center mt-4 cta1">
-              <Link to="/JeuxMario">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                  <p className="text-xl font-bold opacity-90 ">En savoir +</p>
-                </button>
-              </Link>
-            </div>
-            </div>
-            </div>
-            </div>
-        </div>
             </div>
           </>
         )}
@@ -537,48 +522,41 @@ function Mainlayout() {
 
         <div className="flex flex-col gap-8 mt-4 sectionpres">
           <div className="sectionprestt flex flex-col justify-between h-full w-full ">
-          
-          <div className="sectionpresdroite ">
-          <h2 className="text-center text-2xl text-white font-bold textbsecpres2">
-            A propos de moi
-          </h2>
-          <div className="flex flex-col sectiontextpres flex-wrap">
-            <p className="text-xl text-justify text-white textpresmp2">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              quae nostrum, minima eligendi quibusdam voluptatibus quidem eos
-              quam ipsam nisi.
-            </p>
-            <p className="text-xl text-justify text-white textpresmp2">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              quae nostrum, minima eligendi quibusdam voluptatibus quidem eos
-              quam ipsam nisi.
-            </p>
-            <div className="flex justify-center btncv">
-            <a href={CV} download type="btn">
-                <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta flex justify-center gap-2 items-center">
-                      
-                      <FaDownload/>
-                      <p className="font-bold">
-                        CV
-                      </p>
-
-                </button>
-            </a>
+            <div className="sectionpresdroite ">
+              <h2 className="text-center text-2xl text-white font-bold textbsecpres2">
+                A propos de moi
+              </h2>
+              <div className="flex flex-col sectiontextpres flex-wrap">
+                <p className="text-xl text-justify text-white textpresmp2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione quae nostrum, minima eligendi quibusdam voluptatibus
+                  quidem eos quam ipsam nisi.
+                </p>
+                <p className="text-xl text-justify text-white textpresmp2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione quae nostrum, minima eligendi quibusdam voluptatibus
+                  quidem eos quam ipsam nisi.
+                </p>
+                <div className="flex justify-center btncv">
+                  <a href={CV} download type="btn">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta flex justify-center gap-2 items-center">
+                      <FaDownload />
+                      <p className="font-bold">CV</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
-            
-            
-          </div>
-          </div>
-          <div className="flex justify-center items-center sectionphotomp2 w-full h-full mt-14 ">
-  <motion.img
-    src={imgIsClicked ? randomPhoto : photomaxime2 }
-    key={randomPhoto}
-    alt=""
-    className="w-[300px] h-[300px] rounded-full border-2 border-[#B8FFC7] imgsoleilmp imgeffect"
-    whileHover={{ scale: 1.1 }} // Appliquer l'effet de scale au survol
-    transition={{ duration: 0.5 }} // Définir la durée de la transition
-  />
-</div>
+            <div className="flex justify-center items-center sectionphotomp2 w-full h-full mt-14 ">
+              <motion.img
+                src={imgIsClicked ? randomPhoto : photomaxime2}
+                key={randomPhoto}
+                alt=""
+                className="w-[300px] h-[300px] rounded-full border-2 border-[#B8FFC7] imgsoleilmp imgeffect"
+                whileHover={{ scale: 1.1 }} // Appliquer l'effet de scale au survol
+                transition={{ duration: 0.5 }} // Définir la durée de la transition
+              />
+            </div>
           </div>
         </div>
 
@@ -589,42 +567,89 @@ function Mainlayout() {
         </h2>
 
         <div className="flex gap-4 justify-center mt-6 ensemblepassions">
-          <motion.div className="luciole7" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}}>
-            
+          <motion.div
+            className="luciole7"
+            drag
+            dragConstraints={{ left: -30, top: -30, right: 30, bottom: 30 }}
+          >
             <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions cursor-pointer">
-              <img src={piano} alt="" className="w-8 h-8 imgpassions2"draggable="false" />
+              <img
+                src={piano}
+                alt=""
+                className="w-8 h-8 imgpassions2"
+                draggable="false"
+              />
             </div>
-            
           </motion.div>
 
           <div className="flex flex-col">
-          <motion.div className="luciole7 relative" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}} onClick={handleImgClick} onMouseUp={handleNotShowStar} onMouseDown={handleShowStar} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto}>
-            
-            <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative cursor-pointer hover:bg-[#B8FFC7] hover:border-2 hover:border-white ease-out duration-500" onClick={handleImgClick} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto} > 
-                       
-              <img src={photo} alt="" className="w-8 h-8 imgpassions2" draggable="false" onClick={handleImgClick} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto}/>
-              <div className={`absolute top-[-15px] right-0 rounded-full border-2 ${photoOverForBorder ? "border-white" : "border-[#B8FFC7]"} overflow-hidden fondimg`} onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto}>
-              <motion.img key={randomPhoto} src={randomPhoto} transition={{ duration: 0.5 }} alt="" className="w-12 h-12 object-cover imgeffect" onMouseEnter={handleBorderPhoto} onMouseOut={handleNotBorderPhoto} />
-            </div>
-            {
-              showStar && (
-                <>
-                <div className="absolute top-6 left-6 scaleee">
-            <img src={star} alt="" className="w-8 h-8 "/>
+            <motion.div
+              className="luciole7 relative"
+              drag
+              dragConstraints={{ left: -30, top: -30, right: 30, bottom: 30 }}
+              onClick={handleImgClick}
+              onMouseUp={handleNotShowStar}
+              onMouseDown={handleShowStar}
+              onMouseEnter={handleBorderPhoto}
+              onMouseOut={handleNotBorderPhoto}
+            >
+              <div
+                className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions relative cursor-pointer hover:bg-[#B8FFC7] hover:border-2 hover:border-white ease-out duration-500"
+                onClick={handleImgClick}
+                onMouseEnter={handleBorderPhoto}
+                onMouseOut={handleNotBorderPhoto}
+              >
+                <img
+                  src={photo}
+                  alt=""
+                  className="w-8 h-8 imgpassions2"
+                  draggable="false"
+                  onClick={handleImgClick}
+                  onMouseEnter={handleBorderPhoto}
+                  onMouseOut={handleNotBorderPhoto}
+                />
+                <div
+                  className={`absolute top-[-15px] right-0 rounded-full border-2 ${
+                    photoOverForBorder ? "border-white" : "border-[#B8FFC7]"
+                  } overflow-hidden fondimg`}
+                  onMouseEnter={handleBorderPhoto}
+                  onMouseOut={handleNotBorderPhoto}
+                >
+                  <motion.img
+                    key={randomPhoto}
+                    src={randomPhoto}
+                    transition={{ duration: 0.5 }}
+                    alt=""
+                    className="w-12 h-12 object-cover imgeffect"
+                    onMouseEnter={handleBorderPhoto}
+                    onMouseOut={handleNotBorderPhoto}
+                  />
+                </div>
+                {showStar && (
+                  <>
+                    <div className="absolute top-6 left-6 scaleee">
+                      <img src={star} alt="" className="w-8 h-8 " />
+                    </div>
+                  </>
+                )}
+              </div>
 
-            </div>
-                </>
-              )
-            }
-            </div>
-          
-          <p className="text-center text-white font-bold mt-2">Click !</p>
-          </motion.div>
+              <p className="text-center text-white font-bold mt-2">Click !</p>
+            </motion.div>
           </div>
 
-          <motion.div className="luciole7" drag dragConstraints={{left:-30,top:-30,right:30,bottom:30}}>
+          <motion.div
+            className="luciole7"
+            drag
+            dragConstraints={{ left: -30, top: -30, right: 30, bottom: 30 }}
+          >
             <div className="bg-white border-2 border-[#B8FFC7] rounded-full flex justify-center items-center w-20 h-20 imgpassions cursor-pointer">
-              <img src={football} alt="" className="w-12 h-12 imgpassions2" draggable="false"/>
+              <img
+                src={football}
+                alt=""
+                className="w-12 h-12 imgpassions2"
+                draggable="false"
+              />
             </div>
           </motion.div>
         </div>
@@ -646,9 +671,7 @@ function Mainlayout() {
                 <img src={nodejsicon} alt="" className="h-24 w-24 m-4" />
                 <p className="text-center font-bold ">Node.js</p>
               </span>
-              
             </div>
-            
 
             <div className="h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1"></div>
 
@@ -686,7 +709,9 @@ function Mainlayout() {
         >
           <div className="flex gap-2 items-center">
             <img src={mailicon} alt="" className="w-6 h-6" />
-            <p className="text-[12px] contactp">maxime.prevot1804kz@gmail.com</p>
+            <p className="text-[12px] contactp">
+              maxime.prevot1804kz@gmail.com
+            </p>
           </div>
 
           <div className="flex gap-2 items-center">
