@@ -283,7 +283,7 @@ function Mainlayout() {
             <div className=" real1sectiongauche">
               <div className="relative justify-center flex mt-8 luciole3 ">
                 <img
-                  src={imgcov11}
+                  src={"/RFTCars.png"}
                   alt=""
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
@@ -293,10 +293,10 @@ function Mainlayout() {
             <div className="real1sectiondroite ">
               <div>
                 <h3 className="text-lg text-white text-center TitreReal1">
-                  Datavisualisation
+                  E-Commerce
                 </h3>
                 <h3 className="text-center text-white italic TitreReal2">
-                  Covid-19 Tracker
+                  RFT Cars
                 </h3>
               </div>
               <div className="">
@@ -326,10 +326,10 @@ function Mainlayout() {
             <div className="real1sectiondroite  ">
               <div>
                 <h3 className="text-lg text-white text-center TitreReal1">
-                  Contact-App
+                  Répertoire de contact
                 </h3>
                 <h3 className="text-center text-white italic TitreReal2">
-                 Répertoire de contact
+                  Contact-App{" "}
                 </h3>
               </div>
               <div className="">
@@ -354,7 +354,7 @@ function Mainlayout() {
             <div className=" real1sectiongauche  ">
               <div className="relative justify-center flex mt-8 luciole4 ">
                 <img
-                  src={'/Contact-App.png'}
+                  src={"/Contact-App.png"}
                   alt=""
                   className="rounded-lg border-2 border-[#B8FFC7] "
                   draggable={false}
