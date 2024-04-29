@@ -321,7 +321,7 @@ function Mainlayout() {
                   <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <img src={"/typescriptt.png"} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
-                    <img src={nodejsicon} className="w-5 h-5" alt="" />
+                    <img src={"/Nodejsiconnoire.png"} className="w-5 h-5" alt="" />
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
@@ -353,10 +353,10 @@ function Mainlayout() {
                     </span>
                     <p className="text-sm font-bold">En pause</p>
                   </div>
-                  <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                  <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
                     <img src={javascriptlogo} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
-                    <img src={nodejsicon} className="w-5 h-5" alt="" />
+                    <img src={"/Nodejsiconnoire.png"} className="w-5 h-5" alt="" />
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
@@ -468,7 +468,7 @@ function Mainlayout() {
                   <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <img src={javascriptlogo} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
-                    <img src={nodejsicon} className="w-5 h-5" alt="" />
+                    <img src={"/Nodejsiconnoire.png"} className="w-5 h-5" alt="" />
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
@@ -526,7 +526,7 @@ function Mainlayout() {
                           </span>
                           <p className="text-sm font-bold">Terminé</p>
                         </div>
-                        <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                        <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
                           <img
                             src={javascriptlogo}
                             className="w-5 h-5"
