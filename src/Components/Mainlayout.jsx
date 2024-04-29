@@ -198,6 +198,12 @@ function Mainlayout() {
                     className="w-16 h-16"
                     draggable={false}
                   />
+                  <img
+                    src={"/framer-motion.svg"}
+                    alt=""
+                    className="w-16 h-16"
+                    draggable={false}
+                  />
                 </div>
 
                 <div className="h-1 w-8 bg-[#B8FFC7] mt-4 rounded-full barresep1"></div>
@@ -249,7 +255,7 @@ function Mainlayout() {
 
         <div className="mt-10 " id="real">
           <h3 className="text-lg text-white text-center font-bold projetstext">
-            Quelques-uns de mes projets
+            Mes projets
           </h3>
         </div>
 
@@ -267,9 +273,10 @@ function Mainlayout() {
               <div className="">
                 <div className="mt-6 flex justify-center texteReal1">
                   <p className="text-justify text-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Doloremque quasi fugiat assumenda eligendi sit consequatur
-                    maiores, id non voluptas odio sunt, temporibus
+                    Le HameauGaulois est un site qui a pour objectif d'informer.
+                    C'est une sorte de site vitrine. Ce site possède une gestion
+                    des utilisateurs pour avoir la main sur un gestionnaire
+                    d'évènement.
                   </p>
                 </div>
                 <div className="flex justify-center mt-4 cta1 gap-4 items-center">
@@ -311,6 +318,12 @@ function Mainlayout() {
                     </span>
                     <p className="text-sm font-bold">En cours</p>
                   </div>
+                  <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <img src={"/typescriptt.png"} className="w-5 h-5" alt="" />
+                    <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
+                    <img src={nodejsicon} className="w-5 h-5" alt="" />
+                    <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -340,6 +353,12 @@ function Mainlayout() {
                     </span>
                     <p className="text-sm font-bold">En pause</p>
                   </div>
+                  <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <img src={javascriptlogo} className="w-5 h-5" alt="" />
+                    <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
+                    <img src={nodejsicon} className="w-5 h-5" alt="" />
+                    <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -355,9 +374,11 @@ function Mainlayout() {
               <div className="">
                 <div className="mt-6 flex justify-center texteReal1">
                   <p className="text-justify text-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Doloremque quasi fugiat assumenda eligendi sit consequatur
-                    maiores, id non voluptas odio sunt, temporibus
+                    RFT est une marque fictive que j'ai crée pour ce projet
+                    d'entrainement, ce dernier m'a permis d'apprendre le
+                    framework NextJS. Les fonctionnalités principales d'un site
+                    E-Commerce fonctionnent (Ajout d'avis, redirection vers page
+                    produit avec informations provenants d'une BDD etc...)
                   </p>
                 </div>
                 <div className="flex justify-center mt-4 cta1 gap-4 items-center">
@@ -368,7 +389,7 @@ function Mainlayout() {
                       </p>
                     </button>
                   </Link>
-                  <Link to="https://hameau-gaulois.vercel.app/" target="blank">
+                  <Link to="https://rft-2.vercel.app/" target="blank">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
                       <p className="text-xl font-bold opacity-90 ">
                         Accéder au projet
@@ -395,16 +416,28 @@ function Mainlayout() {
               <div className="">
                 <div className="mt-6 flex justify-center texteReal1">
                   <p className="text-justify text-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Doloremque quasi fugiat assumenda eligendi sit consequatur
-                    maiores, id non voluptas odio sunt, temporibus
+                    La Contact-App est une webApp responsive qui repose sur le
+                    CRUD. Au-delà du CRUD, j'ai appris à manier les systèmes de
+                    session avec Next-Auth, ce dernier package m'a permit
+                    d'utiliser des API google et Github pour obtenir un système
+                    d'authentification complexe et userfriendly.
                   </p>
                 </div>
-                <div className="flex justify-center mt-4 cta1">
-                  <Link to="/Webdocumentaire">
+                <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                  <Link to="/Digi4All">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
                       <p className="text-xl font-bold opacity-90 ">
                         En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://contact-app-ivory-rho.vercel.app/"
+                    target="blank"
+                  >
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-xl font-bold opacity-90 ">
+                        Accéder au projet
                       </p>
                     </button>
                   </Link>
@@ -431,6 +464,12 @@ function Mainlayout() {
                       <img src={"/checkk.svg"} className="w-5 h-5" alt="" />
                     </span>
                     <p className="text-sm font-bold">Terminé</p>
+                  </div>
+                  <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                    <img src={javascriptlogo} className="w-5 h-5" alt="" />
+                    <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
+                    <img src={nodejsicon} className="w-5 h-5" alt="" />
+                    <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
               </div>
@@ -487,6 +526,15 @@ function Mainlayout() {
                           </span>
                           <p className="text-sm font-bold">Terminé</p>
                         </div>
+                        <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                          <img
+                            src={javascriptlogo}
+                            className="w-5 h-5"
+                            alt=""
+                          />
+                          <img src={reactlogo} className="w-5 h-5" alt="" />
+                          <img src={'/threejss.png'} className="w-5 h-5" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -502,17 +550,30 @@ function Mainlayout() {
                     <div className="">
                       <div className="mt-6 flex justify-center texteReal1">
                         <p className="text-justify text-white">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Doloremque quasi fugiat assumenda eligendi sit
-                          consequatur maiores, id non voluptas odio sunt,
-                          temporibus
+                          Ce site web est lié à une API publique qui permet de
+                          récolter des données sur le Covid-19. A partir de ces
+                          données, je crée des graphs en utilisants des
+                          librairies de création de graphs, et j'utilise des
+                          mathématiques pour en tirer certaines conclusions /
+                          constats. J'ai aussi pu essayer de faire de la 3D avec
+                          Three.js
                         </p>
                       </div>
-                      <div className="flex justify-center mt-4 cta1">
-                        <Link to="/CovidTracker">
+                      <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                        <Link to="/Digi4All">
                           <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
                             <p className="text-xl font-bold opacity-90 ">
                               En savoir +
+                            </p>
+                          </button>
+                        </Link>
+                        <Link
+                          to="https://shiny-alpaca-e24526.netlify.app/"
+                          target="blank"
+                        >
+                          <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                            <p className="text-xl font-bold opacity-90 ">
+                              Accéder au projet
                             </p>
                           </button>
                         </Link>
@@ -538,17 +599,29 @@ function Mainlayout() {
                     <div className="">
                       <div className="mt-6 flex justify-center texteReal1">
                         <p className="text-justify text-white">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Doloremque quasi fugiat assumenda eligendi sit
-                          consequatur maiores, id non voluptas odio sunt,
-                          temporibus
+                          Ce webdocumentaire a pour but d'être dynamique afin
+                          d'immerger le visiteur. J'ai alors crée plusieurs
+                          systèmes de mini-jeux pour rendre l'expérience
+                          interactive. L'immersion est basé sur un système de
+                          swipe au fil de l'experience et d'attribution de
+                          score.
                         </p>
                       </div>
-                      <div className="flex justify-center mt-4 cta1">
-                        <Link to="/Webdocumentaire">
+                      <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                        <Link to="/Digi4All">
                           <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
                             <p className="text-xl font-bold opacity-90 ">
                               En savoir +
+                            </p>
+                          </button>
+                        </Link>
+                        <Link
+                          to="https://magical-sopapillas-4fc9b2.netlify.app/"
+                          target="blank"
+                        >
+                          <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                            <p className="text-xl font-bold opacity-90 ">
+                              Accéder au projet
                             </p>
                           </button>
                         </Link>
@@ -583,6 +656,14 @@ function Mainlayout() {
                             />
                           </span>
                           <p className="text-sm font-bold">Terminé</p>
+                        </div>
+                        <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
+                          <img
+                            src={javascriptlogo}
+                            className="w-5 h-5"
+                            alt=""
+                          />
+                          <img src={reactlogo} className="w-5 h-5" alt="" />
                         </div>
                       </div>
                     </div>
