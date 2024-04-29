@@ -221,6 +221,12 @@ function Mainlayout() {
                     className="w-16 h-16"
                     draggable={false}
                   />
+                  <img
+                    src={symfonylogo}
+                    alt=""
+                    className="w-16 h-16"
+                    draggable={false}
+                  />
                 </div>
               </div>
             </div>
@@ -237,16 +243,6 @@ function Mainlayout() {
 
         <div className="mt-20 sectionReal1">
           <div className="petitesectionReal1">
-            <div className=" real1sectiongauche">
-              <div className="relative justify-center flex mt-8 luciole3 ">
-                <img
-                  src={"/AHG.png"}
-                  alt=""
-                  className="rounded-lg border-2 border-[#B8FFC7] "
-                  draggable={false}
-                />
-              </div>
-            </div>
             <div className="real1sectiondroite ">
               <div>
                 <h3 className="text-lg text-white text-center TitreReal1">
@@ -272,6 +268,19 @@ function Mainlayout() {
                       </p>
                     </button>
                   </Link>
+                </div>
+              </div>
+            </div>
+            <div className=" real1sectiongauche">
+              <div className="relative justify-center flex mt-8 luciole3 ">
+                <img
+                  src={"/AHG.png"}
+                  alt=""
+                  className="rounded-lg border-2 border-[#B8FFC7] "
+                  draggable={false}
+                />
+                <div className="h-8 w-8 bg-red-500 absolute right-8 bottom-2">
+
                 </div>
               </div>
             </div>
