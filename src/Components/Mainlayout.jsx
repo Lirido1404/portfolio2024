@@ -137,18 +137,25 @@ function Mainlayout() {
                 développement web basé en France, sur Paris 📍
               </h2>
               <div className="flex gap-6 mt-6 logores">
-                <img
-                  src={linkedIn}
-                  alt=""
-                  draggable={false}
-                  className="imgres"
-                />
-                <img
-                  src={githublogo}
-                  alt=""
-                  draggable={false}
-                  className="imgres"
-                />
+                <a
+                  href="https://www.linkedin.com/in/maxime-pr%C3%A9vot-b286ba250/"
+                  target="blank"
+                >
+                  <img
+                    src={linkedIn}
+                    alt=""
+                    draggable={false}
+                    className="imgres"
+                  />
+                </a>
+                <a href="https://github.com/Lirido1404" target="blank">
+                  <img
+                    src={githublogo}
+                    alt=""
+                    draggable={false}
+                    className="imgres"
+                  />
+                </a>
               </div>
             </div>
             <div className="sectiontechlogocont">
@@ -321,7 +328,11 @@ function Mainlayout() {
                   <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <img src={"/typescriptt.png"} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
-                    <img src={"/Nodejsiconnoire.png"} className="w-5 h-5" alt="" />
+                    <img
+                      src={"/Nodejsiconnoire.png"}
+                      className="w-5 h-5"
+                      alt=""
+                    />
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
@@ -356,7 +367,11 @@ function Mainlayout() {
                   <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
                     <img src={javascriptlogo} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
-                    <img src={"/Nodejsiconnoire.png"} className="w-5 h-5" alt="" />
+                    <img
+                      src={"/Nodejsiconnoire.png"}
+                      className="w-5 h-5"
+                      alt=""
+                    />
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
@@ -468,7 +483,11 @@ function Mainlayout() {
                   <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <img src={javascriptlogo} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
-                    <img src={"/Nodejsiconnoire.png"} className="w-5 h-5" alt="" />
+                    <img
+                      src={"/Nodejsiconnoire.png"}
+                      className="w-5 h-5"
+                      alt=""
+                    />
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
@@ -533,7 +552,11 @@ function Mainlayout() {
                             alt=""
                           />
                           <img src={reactlogo} className="w-5 h-5" alt="" />
-                          <img src={'/threejss.png'} className="w-5 h-5" alt="" />
+                          <img
+                            src={"/threejss.png"}
+                            className="w-5 h-5"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -727,15 +750,17 @@ function Mainlayout() {
               </h2>
               <div className="flex flex-col sectiontextpres flex-wrap">
                 <p className="text-xl text-justify text-white textpresmp2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione quae nostrum, minima eligendi quibusdam voluptatibus
-                  quidem eos quam ipsam nisi.
+                  Je suis actuellement étudiant en deuxième année de BUT MMI,
+                  avec pour ambition d'intégrer une école d'ingénieur afin de
+                  devenir développeur full-stack. Mon objectif ultime est de
+                  concevoir des systèmes automatisés, qu'ils soient mécaniques
+                  ou numériques. <br />
+                  <br /> Ce qui me passionne dans le domaine de l'informatique,
+                  c'est l'opportunité constante d'apprendre et d'explorer de
+                  nouveaux horizons. Je suis motivé par le défi de créer des
+                  systèmes complexes, en bref, innover.
                 </p>
-                <p className="text-xl text-justify text-white textpresmp2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione quae nostrum, minima eligendi quibusdam voluptatibus
-                  quidem eos quam ipsam nisi.
-                </p>
+                <p className="text-xl text-justify text-white textpresmp2"></p>
                 <div className="flex justify-center btncv">
                   <a href={CV} download type="btn">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta flex justify-center gap-2 items-center">
@@ -856,7 +881,7 @@ function Mainlayout() {
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full sepetudes"></div>
 
         <h2 className="text-center text-2xl text-white font-bold mt-4 textpassionss">
-          Mes objectifs
+          Mes objectifs proches
         </h2>
 
         <div className="flex flex-col mt-10 gap-6 divicondev">
@@ -883,18 +908,21 @@ function Mainlayout() {
 
           <div className=" flex justify-center flex-col bg-white relative rounded-lg border-[3px] border-[#E4E4E4] parentdivetudes1">
             <div className="flex justify-center mt-2">
-              <img src={typescript} alt="" className="h-24 w-24" />
+              <img src={"/pythonlogoo.png"} alt="" className="h-24 w-24" />
             </div>
 
-            <p className="text-center font-bold mt-4">Typescript</p>
+            <p className="text-center font-bold mt-4">Python</p>
 
             <div className="h-1 w-[80%] bg-[#E4E4E4] mx-auto mt-1 rounded-full separateurd1"></div>
 
             <div className="flex justify-center">
               <p className="text-sm text-justify p-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-                sed adipisci doloremque, nostrum quia repellat saepe iusto eaque
-                laboriosam voluptas!
+                J'aimerai vraiment m'améliorer en algorithmie, je suis persuadé
+                que ce domaine me permettra de mieux comprendre l'univers du
+                code, et qu'il me permettra par la suite de proposer des
+                solutions sur-mesures à des problèmes spécifiques. Je n'aurai
+                plus besoin de demander de l'aide à ChatGPT pour résoudre des
+                problèmes simples.
               </p>
             </div>
           </div>
