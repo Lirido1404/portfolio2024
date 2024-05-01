@@ -39,7 +39,7 @@ import telicon from "../Images/main/telicon.png";
 import JeuxTypeMario from "../Pages/JeuxTypeMario";
 
 import { FaDownload } from "react-icons/fa";
-import CV from "../Images/CV_MP.pdf";
+import CV from "../Images/CV_Maxime_Prevot.pdf";
 
 import typescript from "../Images/main/typescript.svg";
 import star from "../Images/star.svg";
