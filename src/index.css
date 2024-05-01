@@ -19,7 +19,7 @@ body{
 }
 
 
-@media screen and (width > 450px) {
+@media screen and (width > 1025px) {
     .navcompl{
         display: block;
     }
@@ -121,7 +121,7 @@ body{
 
     .projetstext{
         text-align: left;
-        font-size: 65px;
+        
         font-weight: bold;
         margin-top: 5rem;
     }
@@ -186,7 +186,7 @@ body{
 
     .sectionprestt{
         display: flex;
-        margin-top: 1rem;
+        
         flex-direction: row !important;
     }
 

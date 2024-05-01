@@ -178,13 +178,13 @@ function Mainlayout() {
                   <img
                     src={"/nextjslogoo.png"}
                     alt=""
-                    className="w-18 h-18"
+                    className="w-14 h-14 lg:w-18 lg:h-18"
                     draggable={false}
                   />
                   <img
                     src={reactlogo}
                     alt=""
-                    className="w-18 h-18"
+                    className="w-14 h-14 lg:w-18 lg:h-18"
                     draggable={false}
                   />
                   <img
@@ -196,7 +196,7 @@ function Mainlayout() {
                   <img
                     src={"/typescriptt.png"}
                     alt=""
-                    className="w-16 h-16"
+                    className="w-14 h-14 lg:w-18 lg:h-18"
                     draggable={false}
                   />
                   <img
@@ -208,7 +208,7 @@ function Mainlayout() {
                   <img
                     src={"/framer-motion.svg"}
                     alt=""
-                    className="w-16 h-16"
+                    className="w-14 h-14 lg:w-18 lg:h-18"
                     draggable={false}
                   />
                 </div>
@@ -261,14 +261,14 @@ function Mainlayout() {
         <div className="h-1 w-[70%] mx-auto bg-[#B8FFC7] mt-14 rounded-full hidden sepP1Real"></div>
 
         <div className="mt-10 " id="real">
-          <h3 className="text-lg text-white text-center font-bold projetstext">
+          <h3 className="lg:text-7xl text-2xl text-white text-center font-bold projetstext">
             Mes projets
           </h3>
         </div>
 
         <div className="mt-20 sectionReal1">
           <div className="petitesectionReal1">
-            <div className="real1sectiondroite ">
+            <div className="real1sectiondroite hidden lg:flex">
               <div>
                 <h3 className="text-lg text-white text-center TitreReal1">
                   Site d'association
@@ -286,22 +286,22 @@ function Mainlayout() {
                     d'évènement.
                   </p>
                 </div>
-                <div className="flex justify-center mt-4 cta1 gap-4 items-center">
-                  <Link to="/Digi4All">
-                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">
-                        En savoir +
-                      </p>
-                    </button>
-                  </Link>
-                  <Link to="https://hameau-gaulois.vercel.app/" target="blank">
-                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">
-                        Accéder au projet
-                      </p>
-                    </button>
-                  </Link>
-                </div>
+              </div>
+              <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                <Link to="/Digi4All">
+                  <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                    <p className="text-sm  lg:text-xl font-bold opacity-90  ">
+                      En savoir +
+                    </p>
+                  </button>
+                </Link>
+                <Link to="https://hameau-gaulois.vercel.app/" target="blank">
+                  <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                    <p className="text-sm  lg:text-xl font-bold opacity-90  ">
+                      Accéder au projet
+                    </p>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className=" real1sectiongauche">
@@ -317,13 +317,15 @@ function Mainlayout() {
                     <span>
                       <img src={"/profilsvg1.svg"} className="w-5 h-5" alt="" />
                     </span>
-                    <p className="text-sm font-bold">Personnel</p>
+                    <p className="text-sm font-bold hidden lg:flex">
+                      Personnel
+                    </p>
                   </div>
                   <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <span>
                       <img src={"/timee.svg"} className="w-5 h-5" alt="" />
                     </span>
-                    <p className="text-sm font-bold">En cours</p>
+                    <p className="text-sm font-bold hidden lg:flex">En cours</p>
                   </div>
                   <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <img src={"/typescriptt.png"} className="w-5 h-5" alt="" />
@@ -336,6 +338,42 @@ function Mainlayout() {
                     <img src={"/mongoodb.svg"} className="w-5 h-5" alt="" />
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="real1sectiondroite block lg:hidden  ">
+              <div>
+                <h3 className="text-lg text-white text-center TitreReal1">
+                  Site d'association
+                </h3>
+                <h3 className="text-center text-white italic TitreReal2">
+                  HameauGaulois
+                </h3>
+              </div>
+              <div className="">
+                <div className="mt-6 flex justify-center texteReal1">
+                  <p className="text-justify text-white">
+                    Le HameauGaulois est un site qui a pour objectif d'informer.
+                    C'est une sorte de site vitrine. Ce site possède une gestion
+                    des utilisateurs pour avoir la main sur un gestionnaire
+                    d'évènement.
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                <Link to="/Digi4All">
+                  <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                    <p className="text-sm  lg:text-xl font-bold opacity-90  ">
+                      En savoir +
+                    </p>
+                  </button>
+                </Link>
+                <Link to="https://hameau-gaulois.vercel.app/" target="blank">
+                  <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                    <p className="text-sm  lg:text-xl font-bold opacity-90  ">
+                      Accéder au projet
+                    </p>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -356,16 +394,18 @@ function Mainlayout() {
                     <span>
                       <img src={"/profilsvg1.svg"} className="w-5 h-5" alt="" />
                     </span>
-                    <p className="text-sm font-bold">Personnel</p>
+                    <p className="text-sm font-bold hidden lg:flex">
+                      Personnel
+                    </p>
                   </div>
                   <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
                     <span>
                       <img src={"/pausee.svg"} className="w-5 h-5" alt="" />
                     </span>
-                    <p className="text-sm font-bold">En pause</p>
+                    <p className="text-sm font-bold hidden lg:flex">En pause</p>
                   </div>
                   <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
-                    <img src={javascriptlogo} className="w-5 h-5" alt="" />
+                    <img src={"/typescriptt.png"} className="w-5 h-5" alt="" />
                     <img src={"/nextjslogoo.png"} className="w-5 h-5" alt="" />
                     <img
                       src={"/Nodejsiconnoire.png"}
@@ -399,14 +439,14 @@ function Mainlayout() {
                 <div className="flex justify-center mt-4 cta1 gap-4 items-center">
                   <Link to="/Digi4All">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">
+                      <p className="text-sm  lg:text-xl font-bold opacity-90  ">
                         En savoir +
                       </p>
                     </button>
                   </Link>
-                  <Link to="https://rft-2.vercel.app/" target="blank">
+                  <Link to="https://rft-4-ts2.vercel.app/" target="blank">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">
+                      <p className="text-sm  lg:text-xl font-bold opacity-90  ">
                         Accéder au projet
                       </p>
                     </button>
@@ -419,7 +459,7 @@ function Mainlayout() {
 
         <div className="mt-20 sectionReal1 sectionReal2">
           <div className="petitesectionReal1">
-            <div className="real1sectiondroite  ">
+            <div className="real1sectiondroite  hidden lg:flex">
               <div>
                 <h3 className="text-lg text-white text-center TitreReal1">
                   Répertoire de contact
@@ -441,7 +481,7 @@ function Mainlayout() {
                 <div className="flex justify-center mt-4 cta1 gap-4 items-center">
                   <Link to="/Digi4All">
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">
+                      <p className="text-sm lg:text-xl font-bold opacity-90  ">
                         En savoir +
                       </p>
                     </button>
@@ -451,7 +491,7 @@ function Mainlayout() {
                     target="blank"
                   >
                     <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                      <p className="text-xl font-bold opacity-90 ">
+                      <p className="text-sm lg:text-xl font-bold opacity-90  ">
                         Accéder au projet
                       </p>
                     </button>
@@ -472,13 +512,13 @@ function Mainlayout() {
                     <span>
                       <img src={"/school.svg"} className="w-5 h-5" alt="" />
                     </span>
-                    <p className="text-sm font-bold">Scolaire</p>
+                    <p className="text-sm font-bold hidden lg:flex">Scolaire</p>
                   </div>
                   <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <span>
                       <img src={"/checkk.svg"} className="w-5 h-5" alt="" />
                     </span>
-                    <p className="text-sm font-bold">Terminé</p>
+                    <p className="text-sm font-bold hidden lg:flex">Terminé</p>
                   </div>
                   <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                     <img src={javascriptlogo} className="w-5 h-5" alt="" />
@@ -493,6 +533,46 @@ function Mainlayout() {
                 </div>
               </div>
             </div>
+            <div className="real1sectiondroite block lg:hidden ">
+              <div>
+                <h3 className="text-lg text-white text-center TitreReal1">
+                  Répertoire de contact
+                </h3>
+                <h3 className="text-center text-white italic TitreReal2">
+                  Contact-App{" "}
+                </h3>
+              </div>
+              <div className="">
+                <div className="mt-6 flex justify-center texteReal1">
+                  <p className="text-justify text-white">
+                    La Contact-App est une webApp responsive qui repose sur le
+                    CRUD. Au-delà du CRUD, j'ai appris à manier les systèmes de
+                    session avec Next-Auth, ce dernier package m'a permit
+                    d'utiliser des API google et Github pour obtenir un système
+                    d'authentification complexe et userfriendly.
+                  </p>
+                </div>
+                <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                  <Link to="/Digi4All">
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-sm lg:text-xl font-bold opacity-90  ">
+                        En savoir +
+                      </p>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://contact-app-ivory-rho.vercel.app/"
+                    target="blank"
+                  >
+                    <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                      <p className="text-sm lg:text-xl font-bold opacity-90  ">
+                        Accéder au projet
+                      </p>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -503,7 +583,7 @@ function Mainlayout() {
                 className="bg-white px-16 py-1  rounded border-1 border-[#EDEDED] btncta"
                 onClick={handleShowReals}
               >
-                <p className="text-xl font-bold opacity-90 text-[#08262E] ">
+                <p className="text-sm lg:text-xl font-bold opacity-90  text-[#08262E] ">
                   + de projets
                 </p>
               </button>
@@ -533,7 +613,9 @@ function Mainlayout() {
                               alt=""
                             />
                           </span>
-                          <p className="text-sm font-bold">Scolaire</p>
+                          <p className="text-sm font-bold hidden lg:flex">
+                            Scolaire
+                          </p>
                         </div>
                         <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
                           <span>
@@ -543,7 +625,9 @@ function Mainlayout() {
                               alt=""
                             />
                           </span>
-                          <p className="text-sm font-bold">Terminé</p>
+                          <p className="text-sm font-bold hidden lg:flex">
+                            Terminé
+                          </p>
                         </div>
                         <div className="p-2 h-8 border-2 bg-[#B8FFC7] border-white rounded-full flex items-center gap-2">
                           <img
@@ -585,7 +669,7 @@ function Mainlayout() {
                       <div className="flex justify-center mt-4 cta1 gap-4 items-center">
                         <Link to="/Digi4All">
                           <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                            <p className="text-xl font-bold opacity-90 ">
+                            <p className="text-sm lg:text-xl font-bold opacity-90  ">
                               En savoir +
                             </p>
                           </button>
@@ -595,7 +679,7 @@ function Mainlayout() {
                           target="blank"
                         >
                           <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                            <p className="text-xl font-bold opacity-90 ">
+                            <p className="text-sm lg:text-xl font-bold opacity-90  ">
                               Accéder au projet
                             </p>
                           </button>
@@ -610,7 +694,7 @@ function Mainlayout() {
             <div className="reqMario">
               <div className="mt-20 sectionReal1 sectionReal2">
                 <div className="petitesectionReal1">
-                  <div className="real1sectiondroite  ">
+                  <div className="real1sectiondroite hidden lg:flex ">
                     <div>
                       <h3 className="text-lg text-white text-center TitreReal1">
                         Webdocumentaire
@@ -633,7 +717,7 @@ function Mainlayout() {
                       <div className="flex justify-center mt-4 cta1 gap-4 items-center">
                         <Link to="/Digi4All">
                           <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                            <p className="text-xl font-bold opacity-90 ">
+                            <p className="text-sm lg:text-xl font-bold opacity-90  ">
                               En savoir +
                             </p>
                           </button>
@@ -643,7 +727,7 @@ function Mainlayout() {
                           target="blank"
                         >
                           <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
-                            <p className="text-xl font-bold opacity-90 ">
+                            <p className="text-sm lg:text-xl font-bold opacity-90  ">
                               Accéder au projet
                             </p>
                           </button>
@@ -668,7 +752,9 @@ function Mainlayout() {
                               alt=""
                             />
                           </span>
-                          <p className="text-sm font-bold">Scolaire</p>
+                          <p className="text-sm font-bold hidden lg:flex">
+                            Scolaire
+                          </p>
                         </div>
                         <div className="p-2 h-8 border-2 bg-white border-[#B8FFC7] rounded-full flex items-center gap-2">
                           <span>
@@ -678,7 +764,9 @@ function Mainlayout() {
                               alt=""
                             />
                           </span>
-                          <p className="text-sm font-bold">Terminé</p>
+                          <p className="text-sm font-bold hidden lg:flex">
+                            Terminé
+                          </p>
                         </div>
                         <div className="p-2 h-8 border-2 bg-white  border-[#B8FFC7] rounded-full flex items-center gap-2">
                           <img
@@ -688,6 +776,47 @@ function Mainlayout() {
                           />
                           <img src={reactlogo} className="w-5 h-5" alt="" />
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="real1sectiondroite  lg:hidden block">
+                    <div>
+                      <h3 className="text-lg text-white text-center TitreReal1">
+                        Webdocumentaire
+                      </h3>
+                      <h3 className="text-center text-white italic TitreReal2">
+                        Au delà du swipe
+                      </h3>
+                    </div>
+                    <div className="">
+                      <div className="mt-6 flex justify-center texteReal1">
+                        <p className="text-justify text-white">
+                          Ce webdocumentaire a pour but d'être dynamique afin
+                          d'immerger le visiteur. J'ai alors crée plusieurs
+                          systèmes de mini-jeux pour rendre l'expérience
+                          interactive. L'immersion est basé sur un système de
+                          swipe au fil de l'experience et d'attribution de
+                          score.
+                        </p>
+                      </div>
+                      <div className="flex justify-center mt-4 cta1 gap-4 items-center">
+                        <Link to="/Digi4All">
+                          <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                            <p className="text-sm lg:text-xl font-bold opacity-90  ">
+                              En savoir +
+                            </p>
+                          </button>
+                        </Link>
+                        <Link
+                          to="https://magical-sopapillas-4fc9b2.netlify.app/"
+                          target="blank"
+                        >
+                          <button className="bg-[#B8FFC7] px-8 py-1  rounded border-1 border-[#EDEDED] btncta">
+                            <p className="text-sm lg:text-xl font-bold opacity-90  ">
+                              Accéder au projet
+                            </p>
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -743,12 +872,22 @@ function Mainlayout() {
         <div className="h-1 w-[100%] bg-[#B8FFC7] mt-14 rounded-full sepetudes"></div>
 
         <div className="flex flex-col gap-8 mt-4 sectionpres">
+        <div className="flex justify-center items-center sectionphotomp2 w-full h-full mt-14 lg:hidden">
+              <motion.img
+                src={imgIsClicked ? randomPhoto : photomaxime2}
+                key={randomPhoto}
+                alt=""
+                className="w-[300px] h-[300px] rounded-full border-2 border-[#B8FFC7] imgsoleilmp imgeffect"
+                whileHover={{ scale: 1.1 }} // Appliquer l'effet de scale au survol
+                transition={{ duration: 0.5 }} // Définir la durée de la transition
+              />
+            </div>
           <div className="sectionprestt flex flex-col justify-between h-full w-full ">
             <div className="sectionpresdroite ">
-              <h2 className="text-center text-2xl text-white font-bold textbsecpres2">
+              <h2 className="text-center text-2xl text-white font-bold textbsecpres2 mt-2">
                 A propos de moi
               </h2>
-              <div className="flex flex-col sectiontextpres flex-wrap">
+              <div className="flex flex-col sectiontextpres flex-wrap mt-6">
                 <p className="text-xl text-justify text-white textpresmp2">
                   Je suis actuellement étudiant en deuxième année de BUT MMI,
                   avec pour ambition d'intégrer une école d'ingénieur afin de
@@ -771,7 +910,7 @@ function Mainlayout() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center sectionphotomp2 w-full h-full mt-14 ">
+            <div className=" justify-center items-center sectionphotomp2 w-full h-full mt-14 hidden lg:flex ">
               <motion.img
                 src={imgIsClicked ? randomPhoto : photomaxime2}
                 key={randomPhoto}
